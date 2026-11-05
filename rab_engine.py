@@ -1839,7 +1839,8 @@ button[kind="secondary"] { border-radius:10px; border:1px solid #D5DDEB; font-we
 """
 
 P_DASH, P_VOL, P_JADWAL, P_HASIL, P_PANDUAN = "🏠  Dashboard", "📋  Volume Pekerjaan", "🗓️  Jadwal & Kurva S", "📥  Hitung & Unduh", "📖  Panduan"
-PAGES = [P_DASH, P_VOL, P_JADWAL, P_HASIL, P_PANDUAN]
+P_HARGA = "💲  Harga Satuan Dasar"
+PAGES = [P_DASH, P_HARGA, P_VOL, P_JADWAL, P_HASIL, P_PANDUAN]
 
 
 def _esc(x) -> str:
@@ -1887,12 +1888,58 @@ def _page_dashboard(baris: list[Baris], hasil: dict, p: Params):
       <div class="card" style="--c:{'#EF4444' if stat.get(STATUS_NOL,0) else '#7C3AED'};--bg:#F1EAFE"><div class="ic">⚠️</div><div class="n">{periksa}<small>komponen</small></div><div class="l">Harga perlu diperiksa ({stat.get(STATUS_NOL,0)} belum ada harga)</div></div>
     </div>
     <div class="steps">
-      <div class="step"><div class="no">1</div><b>Pilih wilayah</b><span>Atur di panel kiri: harga upah, bahan &amp; alat mengikuti wilayah.</span></div>
+      <div class="step"><div class="no">1</div><b>Pilih wilayah</b><span>Atur di panel kiri; lihat daftar harganya di menu Harga Satuan Dasar.</span></div>
       <div class="step"><div class="no">2</div><b>Isi volume</b><span>Unggah Excel/CSV atau pilih dari katalog 2.797 AHSP.</span></div>
       <div class="step"><div class="no">3</div><b>Atur jadwal</b><span>Usulan otomatis per kelompok pekerjaan untuk Kurva S.</span></div>
       <div class="step"><div class="no">4</div><b>Unduh Excel</b><span>Periksa status harga, lalu buat file RAB lengkap.</span></div>
     </div>
     """, unsafe_allow_html=True)
+
+
+def _page_harga(hasil: dict, p: Params):
+    _judul("Harga Satuan Dasar", "Lihat harga upah tenaga kerja, material, dan peralatan per wilayah, serta harga yang dipakai dalam analisa.")
+    wil_list = daftar_wilayah()
+    opsi = wil_list + ([WIL_CUSTOM] if p.harga_wilayah_df is not None else [])
+    awal = opsi.index(p.wilayah) if p.wilayah in opsi else 0
+    c1, c2 = st.columns([2, 3])
+    wil = c1.selectbox("Wilayah", opsi, index=awal, key="harga_wil")
+    q = c2.text_input("🔎 Cari uraian", key="harga_q", placeholder="mis. semen, tukang batu, excavator")
+    df_all = p.harga_wilayah_df if (wil == WIL_CUSTOM and p.harga_wilayah_df is not None) else harga_dasar_df()
+    df_all = df_all[df_all["wilayah"] == wil]
+    st.markdown(f'<div class="cards" style="grid-template-columns:repeat(3,1fr)">'
+                f'<div class="card" style="--c:#0B4EA2;--bg:#E6F0FE"><div class="ic">👷</div><div class="n">{(df_all.kategori == "Upah").sum()}<small>upah</small></div><div class="l">Tenaga kerja ({_esc(wil)})</div></div>'
+                f'<div class="card" style="--c:#10B981;--bg:#DCF7EC"><div class="ic">🧱</div><div class="n">{(df_all.kategori == "Bahan").sum()}<small>material</small></div><div class="l">Bahan bangunan</div></div>'
+                f'<div class="card" style="--c:#F59E0B;--bg:#FEF3D7"><div class="ic">🚜</div><div class="n">{(df_all.kategori == "Alat").sum()}<small>alat</small></div><div class="l">Sewa/beli peralatan</div></div></div>',
+                unsafe_allow_html=True)
+    tabs = st.tabs(["👷 Upah Tenaga Kerja", "🧱 Material", "🚜 Sewa/Beli Peralatan"])
+    for tab, (kat, judul) in zip(tabs, (("Upah", "upah"), ("Bahan", "material"), ("Alat", "alat"))):
+        with tab:
+            dipakai = st.toggle(f"Hanya {judul} yang dipakai dalam analisa saat ini", key=f"harga_pakai_{kat}",
+                                disabled=not hasil.get("komponen"),
+                                help="Menampilkan komponen pada AHSP terpilih beserta harga satuan yang sedang dipakai (sesuai wilayah proyek di panel kiri).")
+            if dipakai:
+                rows = [{"Uraian (AHSP)": v["uraian"], "Satuan": v["satuan"], "Harga (Rp)": v["res"].harga, "Status": v["res"].status,
+                         "Sumber wilayah": v["res"].wilayah or "-", "Dicocokkan dengan": v["res"].src_nama or "-"}
+                        for k, v in hasil["komponen"].items() if k[0] == kat]
+                d = pd.DataFrame(rows)
+                st.caption(f"Harga yang dipakai pada analisa untuk wilayah proyek: **{p.wilayah}**.")
+            else:
+                d = df_all[df_all["kategori"] == kat][["uraian", "satuan", "harga", "sumber"]].rename(
+                    columns={"uraian": "Uraian", "satuan": "Satuan", "harga": "Harga (Rp)", "sumber": "Sumber"})
+            if q.strip() and len(d):
+                kolom = d.columns[0]
+                m = pd.Series(True, index=d.index)
+                for t in q.lower().split():
+                    m &= d[kolom].astype(str).str.lower().str.contains(re.escape(t), regex=True)
+                d = d[m]
+            if d.empty:
+                st.info("Tidak ada data untuk filter ini.")
+                continue
+            d = d.sort_values(d.columns[0]).reset_index(drop=True)
+            st.dataframe(d, hide_index=True, use_container_width=True, height=470,
+                         column_config={"Harga (Rp)": st.column_config.NumberColumn(format="Rp %.2f")})
+            st.download_button(f"⬇️ Unduh tabel (CSV) - {len(d)} baris", d.to_csv(index=False).encode("utf-8-sig"),
+                               f"harga_{judul}_{re.sub('[^A-Za-z0-9]+', '_', wil)}.csv", "text/csv", key=f"dl_harga_{kat}")
 
 
 def main():
@@ -1905,6 +1952,8 @@ def main():
     hasil = hitung_rab(baris, p) if baris else {"divisi": [], "n_item": 0, "komponen": {}, "dilewati": []}
     if halaman == P_DASH:
         _page_dashboard(baris, hasil, p)
+    elif halaman == P_HARGA:
+        _page_harga(hasil, p)
     elif halaman == P_VOL:
         _judul("Volume Pekerjaan", "Unggah daftar volume atau pilih pekerjaan dari katalog AHSP - tanpa mengetik kode.")
         s1, s2 = st.tabs(["📤 Unggah Volume (Excel/CSV)", "🔎 Pilih dari Katalog AHSP"])
