@@ -35,7 +35,7 @@ except Exception:  # pragma: no cover
     st = None
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR / "data" if (BASE_DIR / "data").exists() else BASE_DIR
+DATA_DIR = BASE_DIR / "data"
 
 APP_TITLE = "Generator RAB Konstruksi - AHSP SE DJBK 47/2026"
 JAM_PER_HARI = 7.0  # jam kerja efektif per hari (sesuai acuan UPAH: 7 jam/hari)
@@ -171,8 +171,19 @@ def _stem(t: str) -> str:
     return t
 
 
+K_KE_MPA = {100: 8, 125: 10, 150: 12, 175: 15, 200: 17, 225: 19, 250: 21, 275: 23, 300: 25, 350: 30, 400: 35, 450: 38, 500: 42}
+
+
+def _k_ke_mpa(m):
+    k = int(m.group(1))
+    mpa = K_KE_MPA.get(k)
+    return f" k{k} fc {mpa} mpa " if mpa else m.group(0)
+
+
 def tokenize(s: str, stem: bool = False) -> list[str]:
-    s = str(s).lower().replace("’", "'").replace("²", "2").replace("³", "3")
+    s = str(s).lower()
+    s = re.sub(r"\bk[- ]?(\d{3})\b", _k_ke_mpa, s)
+    s = re.sub(r"\bf['’`´]?c\b", "fc", s).replace("’", "'").replace("²", "2").replace("³", "3")
     for pat, rep in _SYN:
         s = re.sub(pat, rep, s)
     s = re.sub(r"(\d),(\d)", r"\1.\2", s)
@@ -633,6 +644,20 @@ def cocokkan_uraian(uraian: str, satuan: str = "", k: int = 6) -> list[dict]:
 _JENDELA_DIV = {"1": (0.00, 0.20), "2": (0.10, 0.60), "3": (0.45, 0.92), "4": (0.82, 1.00), "5": (0.40, 0.92),
                 "6": (0.40, 0.92), "7": (0.60, 1.00), "8": (0.55, 0.95), "9": (0.55, 0.95), "10": (0.10, 0.80),
                 "99": (0.80, 1.00)}
+
+
+def cari_katalog(q: str, maks: int = 60) -> pd.DataFrame:
+    """Pencarian bebas pada seluruh katalog (semua kata harus ada; K-xxx diterjemahkan ke f'c)."""
+    df = katalog_df()
+    q = re.sub(r"\bk[- ]?(\d{3})\b", lambda m: f"{m.group(0)} " + (f"{K_KE_MPA[int(m.group(1))]} mpa" if int(m.group(1)) in K_KE_MPA else ""), q.lower())
+    kata = [t for t in re.split(r"\s+", q.strip()) if t]
+    m = pd.Series(True, index=df.index)
+    txt = df["uraian"].str.lower().str.replace(r"f['’`´]c\b", "fc", regex=True).str.replace("’", "'", regex=False)
+    for t in kata:
+        if re.fullmatch(r"k[- ]?\d{3}", t):
+            continue
+        m &= txt.str.contains(re.escape(t.replace("’", "'")), regex=True)
+    return df[m].head(maks)
 
 
 def jadwal_otomatis(kelompok: list[tuple[str, float]], minggu: int) -> dict:
@@ -1530,7 +1555,7 @@ def _tab_upload():
     if not ss.upload_rows:
         return
     rows = ss.upload_rows
-    n_rev = sum(1 for r in rows if r["sumber"] == "otomatis" and r["skor"] < THR_REVIEW)
+    n_rev = sum(1 for r in rows if r["sumber"] == "otomatis" and r["skor"] < THR_REVIEW and r["kode"] != "")
     st.success(f"{len(rows)} baris terbaca. " + (f"**{n_rev} baris perlu ditinjau** (kecocokan rendah) - lihat di bawah." if n_rev else "Semua baris tercocokkan dengan yakin."))
     ahsp = load_ahsp()["items"]
     tbl = pd.DataFrame([{
@@ -1540,27 +1565,34 @@ def _tab_upload():
         "Kecocokan": "manual" if r["sumber"] == "manual" else ("kode" if r["sumber"] == "kode" else f"{r['skor']:.0f}%"),
     } for i, r in enumerate(rows)])
     st.dataframe(tbl, hide_index=True, use_container_width=True, height=min(420, 38 + 35 * len(tbl)))
-    flagged = [i for i, r in enumerate(rows) if r["sumber"] == "otomatis" and r["skor"] < THR_REVIEW]
+    flagged = [i for i, r in enumerate(rows) if r["sumber"] in ("otomatis", "dipilih") and (r["skor"] < THR_REVIEW or r["sumber"] == "dipilih") or (r["sumber"] == "otomatis" and not r["kode"])]
     with st.expander(f"🔍 Tinjau & ubah pencocokan ({len(flagged)} baris kecocokan rendah)", expanded=bool(flagged)):
         pilih_semua = st.checkbox("Tampilkan semua baris (bukan hanya yang kecocokannya rendah)")
         daftar = range(len(rows)) if pilih_semua else flagged
         for i in daftar:
             r = rows[i]
-            opsi = [k["kode"] for k in r["kandidat"]] + ["__abaikan__"]
+            opsi = [k["kode"] for k in r["kandidat"]]
             lab = {k["kode"]: f"{k['kode']} · {k['uraian'][:100]} ({k['satuan']}) - {k['skor']:.0f}%" for k in r["kandidat"]}
-            lab["__abaikan__"] = "(abaikan baris ini)"
+            cari = st.text_input(f"{i + 1}. {r['uraian']} - {r['volume']:g} {r['satuan']}  |  cari AHSP lain di katalog",
+                                 key=f"cari_{ss.upload_sig}_{i}", placeholder="ketik kata kunci, mis. ready mixed 25 MPa  atau  K-300")
+            if cari.strip():
+                for hit in cari_katalog(cari).itertuples():
+                    if hit.kode not in lab:
+                        opsi.insert(0, hit.kode)
+                        lab[hit.kode] = f"🔎 {hit.kode} · {hit.uraian[:100]} ({hit.satuan})"
             if r["kode"] and r["kode"] not in opsi:
                 opsi.insert(0, r["kode"])
-                lab[r["kode"]] = f"{r['kode']} · {ahsp[r['kode']]['uraian'][:100]}"
+                lab[r["kode"]] = f"{r['kode']} · {ahsp[r['kode']]['uraian'][:100]} (dipilih)"
+            opsi.append("__abaikan__")
+            lab["__abaikan__"] = "(abaikan baris ini)"
             cur = r["kode"] if r["kode"] in opsi else opsi[0]
-            sel = st.selectbox(f"{i + 1}. {r['uraian']} - {r['volume']:g} {r['satuan']}", opsi, index=opsi.index(cur),
-                               format_func=lambda k, lab=lab: lab[k], key=f"pil_{ss.upload_sig}_{i}")
+            sel = st.selectbox("Pilih AHSP", opsi, index=opsi.index(cur), format_func=lambda k, lab=lab: lab[k],
+                               key=f"pil_{ss.upload_sig}_{i}_{hash(cari)}", label_visibility="collapsed")
+            if sel != r["kode"]:
+                r["sumber"] = "dipilih"
+                r["skor"] = 100.0
             r["kode"] = "" if sel == "__abaikan__" else sel
-            if sel != "__abaikan__":
-                sc = next((k["skor"] for k in r["kandidat"] if k["kode"] == sel), r["skor"])
-                r["skor"] = max(sc, THR_REVIEW) if sel != cur else r["skor"]
-                r["sumber"] = "dipilih" if sel != (r["kandidat"][0]["kode"] if r["kandidat"] else "") else r["sumber"]
-        st.caption("Tip: bila AHSP yang dicari tidak ada di daftar, cari manual di tab 'Katalog AHSP' lalu isi volumenya di sana.")
+        st.caption("Kolom pencarian memakai seluruh katalog AHSP. Pilihan yang sudah Anda tentukan tidak lagi ditandai 'perlu ditinjau'.")
     if st.button("🗑️ Hapus data unggahan"):
         ss.upload_rows, ss.upload_sig = [], None
         st.rerun()
@@ -1691,23 +1723,32 @@ def _tab_hasil(baris: list[Baris], hasil: dict, p: Params):
     if stat.get(STATUS_NOL, 0):
         st.error(f"{stat[STATUS_NOL]} komponen belum memiliki harga (dihitung Rp 0) sehingga RAB bisa lebih rendah dari seharusnya. "
                  "Isi harganya di bawah ini atau unggah daftar harga wilayah yang lebih lengkap.")
-    perlu = [(k, v) for k, v in hasil["komponen"].items() if v["res"].status in STATUS_NEEDS_REVIEW]
+    perlu = [(k, v) for k, v in hasil["komponen"].items()
+             if v["res"].status in STATUS_NEEDS_REVIEW or v["res"].status == STATUS_MANUAL]
     if perlu:
-        with st.expander(f"Periksa / isi harga ({len(perlu)} komponen)", expanded=bool(stat.get(STATUS_NOL, 0))):
+        with st.expander(f"✏️ Periksa / isi harga manual ({len(perlu)} komponen)", expanded=bool(stat.get(STATUS_NOL, 0))):
             perlu.sort(key=lambda kv: (kv[1]["res"].status != STATUS_NOL, kv[0][0], kv[1]["uraian"]))
-            d = pd.DataFrame([{"Kategori": k[0], "Uraian (AHSP)": v["uraian"], "Satuan": v["satuan"],
-                               "Harga (Rp/satuan AHSP)": float(round(v["res"].harga, 2)), "Status": v["res"].status,
+            st.caption("Ubah kolom **Harga baru** (per satuan AHSP, mis. per kg / m³ / OH / jam), lalu tekan **Terapkan harga**. "
+                       "Kosongkan kolom untuk membatalkan harga manual.")
+            d = pd.DataFrame([{"Kategori": k[0], "Uraian (AHSP)": v["uraian"], "Satuan": v["satuan"], "Status": v["res"].status,
+                               "Harga saat ini": float(round(v["res"].harga, 2)),
+                               "Harga baru": float(ss.harga_manual[k]) if k in ss.harga_manual else None,
                                "Dicocokkan dengan": v["res"].src_nama or "-"} for k, v in perlu])
-            ed = st.data_editor(d, hide_index=True, use_container_width=True, height=min(450, 38 + 35 * len(d)),
-                                key="ed_harga", disabled=["Kategori", "Uraian (AHSP)", "Satuan", "Status", "Dicocokkan dengan"],
-                                column_config={"Harga (Rp/satuan AHSP)": st.column_config.NumberColumn(min_value=0.0, format="%.2f")})
-            berubah = False
-            for (k, v), (_, r) in zip(perlu, ed.iterrows()):
-                nilai = float(r["Harga (Rp/satuan AHSP)"] or 0)
-                if abs(nilai - round(v["res"].harga, 2)) > 0.005:
-                    ss.harga_manual[k] = nilai
-                    berubah = True
-            if berubah:
+            sig_ed = hash(tuple(k for k, _ in perlu))
+            with st.form(f"form_harga_{sig_ed}"):
+                ed = st.data_editor(d, hide_index=True, use_container_width=True, height=min(450, 38 + 35 * len(d)),
+                                    key=f"ed_harga_{sig_ed}",
+                                    disabled=["Kategori", "Uraian (AHSP)", "Satuan", "Status", "Harga saat ini", "Dicocokkan dengan"],
+                                    column_config={"Harga baru": st.column_config.NumberColumn("Harga baru (Rp)", min_value=0.0, format="%.2f"),
+                                                   "Harga saat ini": st.column_config.NumberColumn(format="%.2f")})
+                ok = st.form_submit_button("Terapkan harga", type="primary")
+            if ok:
+                for (k, _), (_, r) in zip(perlu, ed.iterrows()):
+                    nv = r["Harga baru"]
+                    if pd.notna(nv) and float(nv) >= 0:
+                        ss.harga_manual[k] = float(nv)
+                    else:
+                        ss.harga_manual.pop(k, None)
                 st.rerun()
     if ss.harga_manual and st.button("Hapus semua harga manual"):
         ss.harga_manual = {}
