@@ -35,7 +35,7 @@ except Exception:  # pragma: no cover
     st = None
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR / "data"
+DATA_DIR = BASE_DIR / "data" if (BASE_DIR / "data").exists() else BASE_DIR
 
 APP_TITLE = "Generator RAB Konstruksi - AHSP SE DJBK 47/2026"
 JAM_PER_HARI = 7.0  # jam kerja efektif per hari (sesuai acuan UPAH: 7 jam/hari)
