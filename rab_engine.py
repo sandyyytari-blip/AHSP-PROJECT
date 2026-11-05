@@ -1478,8 +1478,8 @@ def _ss_init():
 
 def _sidebar() -> Params:
     sb = st.sidebar
-    sb.header("⚙️ Parameter Proyek")
-    with sb.expander("Identitas proyek", expanded=True):
+    sb.markdown('<div class="sb-title">⚙️ Parameter Proyek</div>', unsafe_allow_html=True)
+    with sb.expander("📝 Identitas proyek"):
         info = {
             "program": st.text_input("Program", ""),
             "kegiatan": st.text_input("Kegiatan", ""),
@@ -1487,44 +1487,46 @@ def _sidebar() -> Params:
             "lokasi": st.text_input("Lokasi", ""),
             "tahun": st.text_input("Tahun Anggaran", str(dt.date.today().year)),
         }
-    sb.subheader("📍 Wilayah Proyek")
     wil_list = daftar_wilayah()
     pilihan = wil_list + [WIL_CUSTOM + " (unggah daftar harga sendiri)"]
-    idx = sb.selectbox("Wilayah (menentukan harga upah, bahan & alat)", range(len(pilihan)), format_func=lambda i: pilihan[i])
-    harga_df, wilayah = None, wil_list[idx] if idx < len(wil_list) else WIL_CUSTOM
-    if wilayah == WIL_CUSTOM:
-        f = sb.file_uploader("Daftar harga wilayah (xlsx/csv)", type=["xlsx", "csv"], key="up_harga",
-                             help="Kolom wajib: kategori (Upah/Bahan/Alat), uraian, satuan, harga.")
-        if f is not None:
-            try:
-                harga_df = baca_harga_unggahan(f.name, f.getvalue())
-                sb.success(f"{len(harga_df)} baris harga terbaca.")
-            except Exception as e:  # noqa: BLE001
-                sb.error(f"Gagal membaca harga: {e}")
-        if harga_df is None:
-            sb.warning("Unggah daftar harga untuk memakai wilayah ini; sementara harga acuan dipakai.")
-            wilayah = wil_list[0]
-    pakai_acuan = sb.checkbox("Pakai harga wilayah acuan bila harga tidak ditemukan", value=True,
-                              help="Komponen yang tidak ada pada daftar harga wilayah diisi dari wilayah acuan dan ditandai 'periksa'.")
-    acuan, faktor = "DKI Jakarta", 1.0
-    if pakai_acuan:
-        acuan = sb.selectbox("Wilayah acuan", wil_list, index=wil_list.index("DKI Jakarta") if "DKI Jakarta" in wil_list else 0)
-        faktor = sb.number_input("Faktor penyesuaian harga acuan", 0.3, 3.0, 1.0, 0.01,
-                                 help="Mis. 0,95 bila harga di wilayah proyek ±5% lebih murah dari wilayah acuan.")
-    sb.subheader("🧮 Parameter Biaya")
-    ohp = sb.number_input("Biaya umum + keuntungan (%)", 0.0, 40.0, 15.0, 0.5, help="SE DJBK: 10% - 15% dari jumlah tenaga+bahan+alat.")
-    ppn = sb.number_input("PPN (%)", 0.0, 25.0, 12.0, 0.5)
-    digit = sb.selectbox("Pembulatan ke atas (ROUNDUP)", [0, -3, -5], index=1,
-                         format_func=lambda d: {0: "Rupiah penuh", -3: "Ribuan", -5: "Ratusan ribu"}[d])
-    with sb.expander("Berat isi bahan (konversi m³ ↔ kg)"):
+    harga_df, wilayah = None, wil_list[0]
+    pakai_acuan, acuan, faktor = True, "DKI Jakarta", 1.0
+    with sb.expander("📍 Wilayah & harga dasar", expanded=True):
+        idx = st.selectbox("Wilayah proyek (menentukan harga upah, bahan & alat)", range(len(pilihan)),
+                           format_func=lambda i: pilihan[i])
+        wilayah = wil_list[idx] if idx < len(wil_list) else WIL_CUSTOM
+        if wilayah == WIL_CUSTOM:
+            f = st.file_uploader("Daftar harga wilayah (xlsx/csv)", type=["xlsx", "csv"], key="up_harga",
+                                 help="Kolom wajib: kategori (Upah/Bahan/Alat), uraian, satuan, harga.")
+            if f is not None:
+                try:
+                    harga_df = baca_harga_unggahan(f.name, f.getvalue())
+                    st.success(f"{len(harga_df)} baris harga terbaca.")
+                except Exception as e:  # noqa: BLE001
+                    st.error(f"Gagal membaca harga: {e}")
+            if harga_df is None:
+                st.warning("Unggah daftar harga untuk memakai wilayah ini; sementara harga acuan dipakai.")
+                wilayah = wil_list[0]
+        pakai_acuan = st.checkbox("Pakai harga wilayah acuan bila harga tidak ditemukan", value=True,
+                                  help="Komponen yang tidak ada pada daftar harga wilayah diisi dari wilayah acuan dan ditandai 'periksa'.")
+        if pakai_acuan:
+            acuan = st.selectbox("Wilayah acuan", wil_list, index=wil_list.index("DKI Jakarta") if "DKI Jakarta" in wil_list else 0)
+            faktor = st.number_input("Faktor penyesuaian harga acuan", 0.3, 3.0, 1.0, 0.01,
+                                     help="Mis. 0,95 bila harga di wilayah proyek ±5% lebih murah dari wilayah acuan.")
+    with sb.expander("🧮 Parameter biaya"):
+        ohp = st.number_input("Biaya umum + keuntungan (%)", 0.0, 40.0, 15.0, 0.5, help="SE DJBK: 10% - 15% dari jumlah tenaga+bahan+alat.")
+        ppn = st.number_input("PPN (%)", 0.0, 25.0, 12.0, 0.5)
+        digit = st.selectbox("Pembulatan ke atas (ROUNDUP)", [0, -3, -5], index=1,
+                             format_func=lambda d: {0: "Rupiah penuh", -3: "Ribuan", -5: "Ratusan ribu"}[d])
+        st.markdown("**Berat isi bahan** (konversi m³ ↔ kg)")
         bi = {"pasir": st.number_input("Pasir (kg/m³)", 800.0, 2200.0, BERAT_ISI_DEFAULT["pasir"], 10.0),
               "kerikil": st.number_input("Kerikil/split (kg/m³)", 800.0, 2200.0, BERAT_ISI_DEFAULT["kerikil"], 10.0),
               "batu": st.number_input("Batu kali/belah (kg/m³)", 800.0, 2800.0, BERAT_ISI_DEFAULT["batu"], 10.0)}
         st.caption("Dipakai bila AHSP memakai kg sedangkan harga wilayah per m³ (atau sebaliknya). Asumsi - sesuaikan dengan hasil uji bahan.")
-    sb.subheader("🗓️ Jadwal")
-    durasi = int(sb.number_input("Durasi pelaksanaan (minggu)", 2, 120, 24, 1))
-    tgl = sb.date_input("Tanggal mulai", dt.date.today())
-    with sb.expander("Penandatangan (opsional)"):
+    with sb.expander("🗓️ Jadwal pelaksanaan"):
+        durasi = int(st.number_input("Durasi pelaksanaan (minggu)", 2, 120, 24, 1))
+        tgl = st.date_input("Tanggal mulai", dt.date.today())
+    with sb.expander("✍️ Penandatangan (opsional)"):
         ttd = {"kota": st.text_input("Kota", ""), "tanggal": st.text_input("Tanggal", dt.date.today().strftime("%d %B %Y")),
                "jabatan": st.text_input("Jabatan", ""), "nama": st.text_input("Nama", "")}
         if not ttd["kota"] and not ttd["jabatan"] and not ttd["nama"]:
@@ -1773,29 +1775,152 @@ def _tab_hasil(baris: list[Baris], hasil: dict, p: Params):
         st.caption("Sheet: Rekap RAB · BoQ · Kurva S · DHSP · AHSP · UPAH · BAHAN · ALAT · Catatan. Semua angka berupa rumus hidup.")
 
 
+CSS = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+html, body, [class*="css"], .stApp { font-family: 'Inter', 'Segoe UI', sans-serif; }
+.stApp { background: #F5F7FB; }
+header[data-testid="stHeader"] { background: transparent; }
+.block-container { padding-top: 1.6rem; padding-bottom: 3rem; max-width: 1280px; }
+[data-testid="stSidebar"] { background: #FFFFFF; border-right: 1px solid #E6EAF2; }
+[data-testid="stSidebar"] .block-container { padding-top: 1rem; }
+.brand { display:flex; align-items:center; gap:12px; padding: 4px 4px 14px; border-bottom:1px solid #EEF1F6; margin-bottom: 10px; }
+.brand .logo { width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg,#0B4EA2,#1E88E5);
+  display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 4px 10px rgba(11,78,162,.3); }
+.brand .t1 { font-weight:800; font-size:16px; color:#0F2A4A; line-height:1.1; }
+.brand .t2 { font-size:11px; color:#7A8AA3; }
+.sb-title { font-weight:700; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:#7A8AA3; margin: 18px 4px 6px; }
+[data-testid="stSidebar"] div[role="radiogroup"] { gap: 4px; }
+[data-testid="stSidebar"] div[role="radiogroup"] label { padding: 10px 14px; border-radius: 10px; width:100%; cursor:pointer;
+  border-left: 4px solid transparent; transition: all .15s; }
+[data-testid="stSidebar"] div[role="radiogroup"] label:hover { background:#F3F6FC; }
+[data-testid="stSidebar"] div[role="radiogroup"] label > div:first-child { display:none; }
+[data-testid="stSidebar"] div[role="radiogroup"] label p { font-weight:600; color:#41536E; font-size:14.5px; }
+[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked) { background:#EAF1FF; border-left-color:#4F46E5; }
+[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked) p { color:#0B4EA2; }
+[data-testid="stSidebar"] [data-testid="stExpander"] { border:1px solid #E6EAF2; border-radius:12px; background:#FAFBFE; }
+.hero { background: linear-gradient(120deg,#0A2A5E 0%,#0B4EA2 55%,#1E88E5 100%); border-radius:20px; padding:34px 38px; color:#fff;
+  display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; box-shadow:0 10px 30px rgba(11,78,162,.25); margin-bottom:6px;
+  background-image: linear-gradient(120deg,#0A2A5E 0%,#0B4EA2 55%,#1E88E5 100%), repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0 12px,transparent 12px 24px);
+  background-blend-mode: overlay; }
+.hero .chip { display:inline-block; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25); padding:4px 14px; border-radius:99px; font-size:12px; font-weight:600; }
+.hero h1 { color:#fff; font-size:30px; font-weight:800; margin:14px 0 8px; padding:0; line-height:1.2; }
+.hero p { color:#DCE8FA; font-size:14.5px; margin:0; max-width:560px; line-height:1.55; }
+.hero .side { background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); border-radius:16px; padding:18px 22px; min-width:260px; align-self:center; }
+.hero .side .k { font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#BBD3F5; }
+.hero .side .v { font-size:19px; font-weight:700; margin-top:2px; }
+.cards { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin: 18px 0 8px; }
+.card { background:#fff; border-radius:16px; padding:20px 22px; border:1px solid #E9EDF5; border-top:4px solid var(--c); box-shadow:0 2px 8px rgba(16,24,40,.05); }
+.card .ic { width:42px; height:42px; border-radius:11px; display:flex; align-items:center; justify-content:center; font-size:21px; background:var(--bg); margin-bottom:12px; }
+.card .n { font-size:26px; font-weight:800; color:#0F2A4A; line-height:1.1; }
+.card .n small { font-size:13px; font-weight:600; color:#7A8AA3; margin-left:4px; }
+.card .l { font-size:13px; color:#6B7C93; margin-top:6px; }
+.steps { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:8px; }
+.step { background:#fff; border-radius:16px; padding:18px 20px; border:1px solid #E9EDF5; }
+.step .no { width:30px; height:30px; border-radius:50%; background:#EAF1FF; color:#0B4EA2; font-weight:800; display:flex; align-items:center; justify-content:center; margin-bottom:10px; }
+.step b { color:#0F2A4A; } .step span { display:block; color:#6B7C93; font-size:13px; margin-top:4px; line-height:1.5; }
+.ph { margin: 4px 0 14px; }
+.ph h2 { font-size:24px; font-weight:800; color:#0F2A4A; margin:0; padding:0; }
+.ph p { color:#6B7C93; margin:4px 0 0; font-size:14px; }
+[data-testid="stMetric"] { background:#fff; border:1px solid #E9EDF5; border-radius:14px; padding:14px 18px; box-shadow:0 2px 8px rgba(16,24,40,.05); }
+[data-testid="stMetricLabel"] p { color:#6B7C93; font-size:13px; }
+[data-testid="stMetricValue"] { color:#0F2A4A; font-weight:800; }
+.stTabs [data-baseweb="tab-list"] { gap:6px; border-bottom:1px solid #E1E7F0; }
+.stTabs [data-baseweb="tab"] { border-radius:10px 10px 0 0; padding:10px 18px; font-weight:600; }
+.stTabs [aria-selected="true"] { color:#0B4EA2; }
+button[kind="primary"], .stDownloadButton button[kind="primary"] { background:#F59E0B; border:none; color:#1F2937; font-weight:700; border-radius:10px; padding:.55rem 1.2rem; }
+button[kind="primary"]:hover { background:#D98A06; color:#111827; }
+button[kind="secondary"] { border-radius:10px; border:1px solid #D5DDEB; font-weight:600; }
+[data-testid="stDataFrame"], [data-testid="stDataEditor"] { border:1px solid #E6EAF2; border-radius:12px; overflow:hidden; }
+[data-testid="stExpander"] { border-radius:12px; }
+.panel { background:#fff; border:1px solid #E9EDF5; border-radius:16px; padding:6px 22px 18px; box-shadow:0 2px 8px rgba(16,24,40,.04); }
+@media (max-width: 900px) { .cards, .steps { grid-template-columns: repeat(2,1fr); } .hero { padding:24px; } }
+</style>
+"""
+
+P_DASH, P_VOL, P_JADWAL, P_HASIL, P_PANDUAN = "🏠  Dashboard", "📋  Volume Pekerjaan", "🗓️  Jadwal & Kurva S", "📥  Hitung & Unduh", "📖  Panduan"
+PAGES = [P_DASH, P_VOL, P_JADWAL, P_HASIL, P_PANDUAN]
+
+
+def _esc(x) -> str:
+    import html
+    return html.escape(str(x))
+
+
+def _judul(judul: str, sub: str):
+    st.markdown(f'<div class="ph"><h2>{judul}</h2><p>{sub}</p></div>', unsafe_allow_html=True)
+
+
+def _nav() -> str:
+    sb = st.sidebar
+    sb.markdown('<div class="brand"><div class="logo">🏗️</div><div><div class="t1">RAB &amp; AHSP</div>'
+                '<div class="t2">Generator RAB · SE DJBK 47/2026</div></div></div>', unsafe_allow_html=True)
+    return sb.radio("Menu", PAGES, key="halaman", label_visibility="collapsed")
+
+
+def _ke_halaman(h: str):
+    st.session_state["halaman"] = h
+
+
+def _page_dashboard(baris: list[Baris], hasil: dict, p: Params):
+    nama = p.info.get("pekerjaan") or "Proyek Baru"
+    st.markdown(f"""
+    <div class="hero"><div>
+      <span class="chip">AHSP Bidang Cipta Karya · SE DJBK No. 47 Tahun 2026</span>
+      <h1>Susun RAB Konstruksi<br>dari volume ke Excel, otomatis.</h1>
+      <p>Pilih wilayah proyek, isi volume pekerjaan tanpa mengetik kode, lalu unduh AHSP, DHSP, BoQ, Rekap RAB dan Kurva S dalam satu file Excel berumus hidup.</p>
+    </div>
+    <div class="side"><div class="k">Proyek aktif</div><div class="v">{_esc(nama)}</div>
+      <div class="k" style="margin-top:12px">Wilayah harga</div><div class="v">{_esc(p.wilayah)}</div></div></div>
+    """, unsafe_allow_html=True)
+    st.button("➕  Mulai isi volume pekerjaan", type="primary", on_click=_ke_halaman, args=(P_VOL,))
+    n_item = hasil.get("n_item", 0)
+    total = rp(hasil["dibulatkan"]) if n_item else "Rp 0"
+    stat = Counter(v["res"].status for v in hasil.get("komponen", {}).values())
+    periksa = sum(stat.get(k, 0) for k in STATUS_NEEDS_REVIEW)
+    nkel = sum(len(d["kelompok"]) for d in hasil.get("divisi", []))
+    st.markdown(f"""
+    <div class="cards">
+      <div class="card" style="--c:#0B4EA2;--bg:#E6F0FE"><div class="ic">📋</div><div class="n">{n_item}<small>pekerjaan</small></div><div class="l">Item pada BoQ ({nkel} kelompok)</div></div>
+      <div class="card" style="--c:#F59E0B;--bg:#FEF3D7"><div class="ic">💰</div><div class="n" style="font-size:21px">{total}</div><div class="l">Total RAB termasuk PPN {p.ppn*100:g}% (dibulatkan)</div></div>
+      <div class="card" style="--c:#10B981;--bg:#DCF7EC"><div class="ic">📍</div><div class="n" style="font-size:19px">{_esc(p.wilayah)}</div><div class="l">Wilayah harga satuan dasar</div></div>
+      <div class="card" style="--c:{'#EF4444' if stat.get(STATUS_NOL,0) else '#7C3AED'};--bg:#F1EAFE"><div class="ic">⚠️</div><div class="n">{periksa}<small>komponen</small></div><div class="l">Harga perlu diperiksa ({stat.get(STATUS_NOL,0)} belum ada harga)</div></div>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="no">1</div><b>Pilih wilayah</b><span>Atur di panel kiri: harga upah, bahan &amp; alat mengikuti wilayah.</span></div>
+      <div class="step"><div class="no">2</div><b>Isi volume</b><span>Unggah Excel/CSV atau pilih dari katalog 2.797 AHSP.</span></div>
+      <div class="step"><div class="no">3</div><b>Atur jadwal</b><span>Usulan otomatis per kelompok pekerjaan untuk Kurva S.</span></div>
+      <div class="step"><div class="no">4</div><b>Unduh Excel</b><span>Periksa status harga, lalu buat file RAB lengkap.</span></div>
+    </div>
+    """, unsafe_allow_html=True)
+
+
 def main():
     st.set_page_config(page_title=APP_TITLE, page_icon="🏗️", layout="wide")
     _ss_init()
-    st.title("🏗️ Generator RAB Konstruksi")
-    st.caption("Berdasarkan AHSP Bidang Cipta Karya - Lampiran VI SE DJBK No. 47 Tahun 2026 · Pilih wilayah → isi volume → unduh Excel "
-               "(AHSP, DHSP, BoQ, Rekap RAB, Kurva S)")
+    st.markdown(CSS, unsafe_allow_html=True)
+    halaman = _nav()
     p = _sidebar()
-    t1, t2, t3, t4 = st.tabs(["1️⃣ Volume Pekerjaan", "2️⃣ Jadwal & Kurva S", "3️⃣ Hitung & Unduh", "ℹ️ Panduan"])
-    with t1:
+    baris = _kumpulkan_baris()
+    hasil = hitung_rab(baris, p) if baris else {"divisi": [], "n_item": 0, "komponen": {}, "dilewati": []}
+    if halaman == P_DASH:
+        _page_dashboard(baris, hasil, p)
+    elif halaman == P_VOL:
+        _judul("Volume Pekerjaan", "Unggah daftar volume atau pilih pekerjaan dari katalog AHSP - tanpa mengetik kode.")
         s1, s2 = st.tabs(["📤 Unggah Volume (Excel/CSV)", "🔎 Pilih dari Katalog AHSP"])
         with s1:
             _tab_upload()
         with s2:
             _tab_katalog()
-        baris = _kumpulkan_baris()
-        _tab_ringkasan(baris)
-    baris = _kumpulkan_baris()
-    hasil = hitung_rab(baris, p) if baris else {"divisi": [], "n_item": 0, "komponen": {}, "dilewati": []}
-    with t2:
+        _tab_ringkasan(_kumpulkan_baris())
+    elif halaman == P_JADWAL:
+        _judul("Jadwal & Kurva S", "Atur minggu mulai dan selesai tiap kelompok pekerjaan; Kurva S dihitung otomatis.")
         _tab_jadwal(hasil, p)
-    with t3:
+    elif halaman == P_HASIL:
+        _judul("Hitung & Unduh", "Rekap biaya, pemeriksaan harga satuan dasar, dan unduh file Excel RAB.")
         _tab_hasil(baris, hasil, p)
-    with t4:
+    else:
+        _judul("Panduan", "Cara memakai aplikasi dan isi file Excel yang dihasilkan.")
         st.markdown(PANDUAN)
 
 
