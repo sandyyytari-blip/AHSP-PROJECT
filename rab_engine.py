@@ -402,8 +402,8 @@ class BukuHarga:
                 if e["uraian"].lower().strip() == gen:
                     su = unit_canon(e["satuan"])
                     f = faktor_konversi(nama, au, su, {})
-                    if f is not None and (su == au):
-                        return (60.0, 60.0, e, f)
+                    if f is not None:
+                        return (80.0, 80.0, e, f)
         return best
 
 

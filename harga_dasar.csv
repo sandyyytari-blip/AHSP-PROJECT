@@ -3240,3 +3240,1352 @@ Kota Padang (Sumatera Barat),Alat,PCH,hari,45000.0,DHS Sumatera Barat
 Kota Padang (Sumatera Barat),Alat,Excavator 80-140 HP,jam,567315.0,DHS Sumatera Barat
 Kota Padang (Sumatera Barat),Alat,Bar Cutter,hari,250000.0,DHS Sumatera Barat
 Kota Padang (Sumatera Barat),Alat,Bar Bender,hari,250000.0,DHS Sumatera Barat
+Kota Semarang (Jawa Tengah),Upah,Pekerja,OJ,19742.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Operator,OJ,38572.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Pembantu Sopir / Driver,OJ,21429.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Mekanik,OJ,33572.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Pembantu Operator,OJ,20572.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Pembantu Mekanik,OJ,20572.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Tukang,OJ,22143.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Kepala Tukang,OJ,23572.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Sopir / Driver,OJ,30715.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Upah,Mandor,OJ,22143.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Accelerator,liter,33134.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Agregat Base Kelas A,m3,280000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Agregat Base Kelas B,m3,270000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Agregat Base Kelas S,m3,260000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Agregat Pecah Mesin 0-5 mm,m3,241667.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Agregat Pecah Mesin 10-20 mm,m3,262050.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Agregat Pecah Mesin 20-30 mm,m3,253600.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Agregat Pecah Mesin 5-10 mm,m3,275000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Anchorage,kg,465000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Anti Stripping Agent,liter,72000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Asbuton B 5/20,kg,3784.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Asbuton B 50/30,kg,3243.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Asbuton Murni PG 70,kg,15766.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Asbuton Murni PG 76,kg,18018.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Asbuton Pracampur,kg,14865.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Asbuton Pracampur PG 70,kg,15315.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Asetilin,kg,116667.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Curah Pen 60/70,kg,12450.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Drum Pen 60/70,kg,11900.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Emulsi CMS,kg,10700.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Emulsi CRS atau RS,kg,13200.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Emulsi CSS,kg,13800.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Emulsi CSS - 1H,kg,13000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Emulsi Modifikasi Polymer,kg,17100.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Modifikasi Polimer PG 70,kg,15800.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Aspal Modifikasi Polimer PG 76,kg,16800.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Asphaltic Plug,kg,32000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Bahan Pengisi (Filler) Tambahan Campuran,kg,2200.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Bahan Tanah Timbunan,m3,165000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Bahan Timbunan Pilihan,m3,200000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Siku 120x120x12mm,kg,12150.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Siku 130x130x12mm,kg,16500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Siku 80x80x6mm,kg,12000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Struktur Galvanis (H beam 400 x 400 x 13 x 21 mm - 12 m),kg,17700.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Struktur Grade 250,kg,18000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Struktur Grade 345,kg,20000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Struktur Grade 485,kg,22000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Tulangan BjTP-280,kg,8153.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Tulangan BjTP-280 Dia. 25 (untuk dowel),kg,8198.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Tulangan BjTP-280 Dia. 32 (untuk dowel),kg,8423.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Tulangan BjTP-280 Dia. 36 (untuk dowel),kg,10394.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Tulangan BjTP-280 Dia. 38 (untuk dowel),kg,11193.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Tulangan BjTS-420A,kg,22959.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Baja Tulangan BjTS-420B,kg,8333.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Balok T Beton Pratekan bentang 60 m,m',1526610000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Bambu,batang,15222.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Bangku/Kursi,buah,2525000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Batu Belah,m3,230000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Batu Kali,m3,220250.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Batu Kapur,m3,141312.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Baut Jembatan Rangka ASTM A325 1/2""x3"" Half Drat",buah,4121.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Baut Jembatan Rangka ASTM A325 1/2""x4"" Half Drat",buah,5544.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Besi Plat 2 mm,kg,9279.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Beton fs 4,5",m3,980000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Beton fs 4,5 (1-3 hari)",m3,1040000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Beton fs 4,5 (3-7 hari)",m3,1010000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Beton fs 4,5 ≤24 jam",m3,1360000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Instan K-350,kg,1290.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Instan K-400,kg,1310.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Instan K-500,kg,1630.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Instan K-600,kg,1730.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Mutu f'c 10 Mpa (setara K-125),m3,828842.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Mutu f'c 15 Mpa (setara K-175),m3,854256.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Mutu f'c 20 Mpa (setara K-250),m3,916946.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Mutu f'c 25 Mpa (setara K-300),m3,948793.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Mutu f'c 30 Mpa (setara K-350),m3,1004478.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Mutu f'c 35 Mpa (setara K-400),m3,1054450.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton Mutu f'c 40 Mpa (setara K-500),m3,1151461.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton SCC (Self Compacting Concrete) f'c 20,m3,1040833.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton SCC (Self Compacting Concrete) f'c 25,m3,1183750.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Beton SCC (Self Compacting Concrete) f'c 30,m3,1263750.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Bollard Jalan (Pengaman Trotoar) dengan lampu,buah,1500000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Bollard Jalan (Pengaman Trotoar) tanpa lampu,buah,1200000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 100 x 100 x 100 cm tebal 15 cm; K-350,m',4028500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 100 x 100 x 100 cm tebal 20 cm; K-350,m',4250000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 120 x 120 x 120 cm tebal 15 cm; K-350,m',5267000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 140 x 140 x 100 cm tebal 15 cm; K-350,m',7000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 150 x 150 x 100 cm tebal 15 cm; K-350,m',8277500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 150 x 150 x 100 cm tebal 20 cm; K-350,m',6300000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 180 x 180 x 100 cm tebal 15 cm; K-350,m',10319500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 200 x 200 x 100 cm tebal 15 cm; K-350,m',11644000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 200 x 200 x 100 cm tebal 20 cm; K-350,m',10000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 300 x 300 x 100 cm tebal 15 cm; K-350,m',21360000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 40 x 40 x 100 cm tebal 15 cm; K-350,m',1056000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 50 x 50 x 100 cm tebal 15 cm; K-350,m',1409000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 60 x 60 x 100 cm tebal 15 cm; K-350,m',1775000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Box Culvert (Gorong-gorong persegi) 80 x 80 x 100 cm tebal 15 cm; K-350,m',3219000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Bridging Plate,kg,22500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cat Anti Karat Cat Meni Besi/Kayu,kg,110000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cat Dasar Beton,kg,66667.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cat Marka Thermoplastic (Type M249-98 Putih & Kuning),kg,23768.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cat Minyak Cat Besi/Kayu,kg,110000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cat Semprot Waterproof,buah,38620.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cat Tembok Eksterior,kg,140000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cat Tembok Interior,kg,111111.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cerucuk Dolken Diameter 10-15 cm,m,55000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Chipping,m3,272000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cold Paving Hot Mix Asbuton (CPHMA),kg,2252.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Compression Seal Karet Pengisi Sambungan,m',710000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cover U-Ditch Ukuran 110x 120; t= 15 cm; K=350,buah,1301200.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cover U-Ditch Ukuran 130x 120; t= 15 cm; K=350,buah,1544400.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cover U-Ditch Ukuran 70x 120; t= 15 cm; K=350,buah,794700.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cover U-Ditch Ukuran 80x 120; t= 15 cm; K=350,buah,916300.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Cover U-Ditch Ukuran 90x 120; t= 15 cm; K=350,buah,1053200.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Curing Compound,liter,20000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Drain Grate Besi Cor (Cast Iron), tebal min. 18 mm (uk. 40 x 40)",buah,1800000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Drain Grate Besi Cor (Cast Iron), tebal min. 18 mm (uk. 60 x 40)",buah,2200000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Elastomer 25×30×3,6 cm",buah,545000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Elastomer 35×30×3,6 cm",buah,728667.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Elastomer 40×35×3,9 cm",buah,1073333.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Elastomer 45×40×4,5 cm",buah,1575000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Expansion Joint Strip Seal,m',2138500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Filler Board (tebal 1 cm),m3,1000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Filler Board (tebal 2 cm),m3,1700000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gebalan Rumput gajah/jepang,m2,30000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Geobag 80x50 cm,m3,27100.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Geomembran HDPE Tebal 1,0 mm",m2,86000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Geomembran HDPE Tebal 1,5 mm",m2,121000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Geotextile Non Woven Kelas I,m2,22374.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Geotextile Non Woven Kelas II,m2,11682.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Geotextile Non Woven Kelas III,m2,8910.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Geotextile Woven Kelas I,m2,15840.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Geotextile Woven Kelas II,m2,12870.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Geotextile Woven Kelas III,m2,9900.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Glass Bead Manik Kaca (M247-09 Potters),kg,22755.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 100x 100 cm; K-350,buah,3300000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 120x 120 cm; K-350,buah,4215000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 140x 140 cm; K-350,buah,5600000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 160x 160 cm; K-350,buah,6300000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 180x 180 cm; K-350,buah,7162500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 200x 200 cm; K-350,buah,7800000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 80x 80 cm; K-350,buah,2525000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-gorong Pipa Baja Bergelombang,m',2700000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-gorong Pipa Beton Ø 100 cm,m',2094600.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-gorong Pipa Beton Ø 150 cm,m',4610600.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-gorong Pipa Beton Ø 60 cm,m',790200.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Gorong-gorong Pipa Beton Ø 80 cm,m',1371800.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Guide Post Beton Mutu K-175,buah,146000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Guide Post Plastik,buah,146318.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Jembatan Bailey Uk. 15 x 4,5 x 2,1 (P per Panel = 3,048, Galvanis Hot Dip Galvanized ASTM A-123, Baut = JIS Grade 8,8 Equivalent)",unit,823308000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Jembatan Bailey Uk. 6 x 4,5 x 2,1 (P per Panel = 3,048, Galvanis Hot Dip Galvanized ASTM A-123, Baut = JIS Grade 8,8 Equivalent)",unit,447568500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Joint Sealent,kg,48000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Kawat Beso Beton (Bendrat) BWG 21 (0,81 mm)",kg,10979.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Kawat Bronjong (Mesh 80 x 100 mm) tebal 2,7 mm tepi 3,4",kg,27273.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Kawat Las 2,6 mm",dos,28441.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kayu Acuan Sengon,m3,2962963.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kayu Perancah Sengon,m3,2777778.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kreb Pracetak Jenis Kreb berparit/Gutter,buah,89000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kreb Pracetak Jenis Kreb dengan Bukaan,buah,98000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kreb Pracetak Jenis Kreb pada Pelandaian Trotoar,buah,125000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kreb Pracetak Jenis Penghalang berparit/Barrier Gutter; t= 20 cm,buah,120000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kreb Pracetak Jenis Penghalang berparit/Barrier Gutter; t= 30 cm,buah,125000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kreb Pracetak Jenis Penghalang/Barrier,buah,250000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Kreb Pracetak Jenis Peninggi/Mountable,buah,112000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Lampu Penerangan Jalan Tenaga Surya Lampu 120 Watt, 6 Strip Lampu LED Chip SMD 30*30, Baterai Lifepo4 8 V 976 WH, Panel 200 WP Monokristalin",set,5500000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Lem Resin,kg,55000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Manhole Cover Besi Cor (Cast Iron), tebal min. 18 mm",buah,1900000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Marmer Nama Jembatan 40 x 60 cm,buah,1245000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Mata Kucing Tipe Bulat,buah,180000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Mata Kucing Tipe Kotak,buah,240000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Mini Pile 25 x 25; L= 6 - 8 m (Bottom),m,412500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Mini Pile 25 x 25; L= 6 - 8 m (Middle),m,480000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Mini Pile 25 x 25; L= 6 - 8 m (Upper),m,418000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Minyak Fluks,liter,76250.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Minyak Pelumas/Oli,liter,56218.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Minyak Tanah,liter,13550.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Mortar Instan,kg,1570.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Oksigen (Isi 1 m3),tabung,35000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Paku Beton,buah,800.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Paku Kayu 4""-6""",kg,22500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pasir Beton,m3,295000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pasir Pasang,m3,245000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pasir Silica (Untuk Pekerjaan Sandblasting),kg,19460.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pasir Urug,m3,240000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Paving Blok (Model Bata 8 cm),m2,155900.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Paving Blok Go Difabel Alumunium,m2,19000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Paving Blok Go Difabel Kuning,m2,25000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Paving Blok Go Difabel Stainles,m2,58000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pemantul Cahaya (Reflector),buah,50000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Perforated Pipe Dia 4""",m,72000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Perforated Pipe Dia 5""",m,116000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Perforated Pipe Dia 6""",m,116500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Perforated Pipe Dia 8""",m,211900.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pertalite RON 90,liter,13800.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pertamax RON 92,liter,14600.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa Galvanis Dia 1,5""",m,69655.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa Galvanis Dia 2""",m,95045.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa Galvanis Dia 3""",m,156592.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa Galvanis Dia 4""",m,229167.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa Galvanis Dia 5""",m,282167.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa Galvanis Dia 6""",m,333833.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa PVC AW Dia. 1"" panjang 4 m",batang,47133.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa PVC AW Dia. 1/2"" panjang 4 m",batang,24867.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa PVC AW Dia. 2"" panjang 4 m",batang,100267.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa PVC AW Dia. 3/4"" panjang 4 m",batang,33700.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa PVC AW Dia. 4"" panjang 4 m",batang,337533.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa PVC AW Dia. 6"" panjang 4 m",batang,791667.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa PVC D Dia. 3"" panjang 4 m",batang,114000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pipa PVC D Dia. 4"" panjang 4 m",batang,175200.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Plasticizer,liter,25435.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Plastik Cor tebal 125 micron,m2,10000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Plat Bondeck tebal 1,00 mm",m2,93694.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Asam Jawa T 150-200 cm,buah,150000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Durian T 200 cm,buah,300000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Kelengkeng T 200 cm,buah,250000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Ketapan T300 cm; Dia 8 - 10 cm,buah,450000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Magga T 200 cm,buah,400000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Pule Dia 10 cm,buah,350000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Rambutan T 200 cm,buah,120000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Sawo T 150 cm,buah,120000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Tabebuya Kuning T 400 cm; Dia 20 - 25 cm,buah,1500000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Tabebuya Pink T 400; Dia 13 - 15 cm,buah,400000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Pohon Jenis Trembesi Dia 15 cm,buah,750000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Portland Composite Cement (PCC) (SNI 15-7064-2004),zak,865.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pracetak Gelagar Tipe I (H-125 L-20,6 m) (fc' 45)",buah,127000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pracetak Gelagar Tipe I (H-160 L-25,6 m) (fc' 45)",buah,162000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pracetak Gelagar Tipe I (H-170 L-30,8 m) (fc' 45)",buah,247000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pracetak Gelagar Tipe I (H-210 L-35,8 m) (fc' 45)",buah,291000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pracetak Gelagar Tipe I (H-210 L-40,8 m) (fc' 45)",buah,375000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pracetak Gelagar Tipe I (H-90 L-16,6 m) (fc' 45)",buah,96000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pracetak Gelagar Tipe U (H-120 L-16,8 m) (fc' 45)",buah,175949000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Pracetak Gelagar Tipe U (H-165 L-25,8 m) (fc' 45)",buah,259280000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Rel Pengaman,m,900000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Retarder,liter,20650.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Rubber Bitumen,kg,56255.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Rumput Vetiver Tebing,m2,25000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"S 97 x x74 cm; L= 16,600 K600",buah,75000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 100x100x120; t= 15 cm; K= 350,buah,3341500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 100x100x120; t= 20 cm; K= 350,buah,4475000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 100x120x120; t= 15 cm; K= 350,buah,3798200.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 100x120x120; t= 20 cm; K= 350,buah,5000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 40x40x120; t= 15 cm; K= 350,buah,1521400.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 40x60x120; t= 15 cm; K= 350,buah,1924500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 40x70x120; t= 15 cm; K= 350,buah,2126500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 50x70x120; t= 15 cm; K= 350,buah,2229900.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 60x70x120; t= 15 cm; K= 350,buah,2333300.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 60x80x120; t= 15 cm; K= 350,buah,2536300.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 80x100x120; t= 15 cm; K= 350,buah,3139500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Saluran U-Ditch Uk. 80x80x120; t= 15 cm; K= 350,buah,2736400.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Scaffolding 170 cm,set,660000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Semen Grouting,kg,5400.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Semen Zak 40 Kg,kg,1182.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Semen Zak 50 Kg,kg,1490.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Serat Fiber,kg,40000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Sheet Pile Baja ukuran 400 x 100 x 10.5 mm x 12 m,m,768000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Sheet Pile W-350 tipe A 1000 (350 x 1000 mm x 9 m),m,1448750.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Sirtu,m3,189150.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Solar (Industry),liter,21250.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 1000 Bottom 6 - 8 m,m,2570000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 1000 Middle 6 - 8 m,m,2773500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 1000 Upper 6 - 8 m,m,2570000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 400 Bottom 6 - 8 m,m,391000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 400 Middle 6 - 8 m,m,493000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 400 Upper 6 - 8 m,m,375500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 600 Bottom 6 - 8 m,m,905000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 600 Middle 6 - 8 m,m,740000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 600 Upper 6 - 8 m,m,905000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 800 Bottom 6 - 8 m,m,1924000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 800 Middle 6 - 8 m,m,1924000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Spun Pile Dia. 800 Upper 6 - 8 m,m,1766000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Tanah Humus,m3,280576.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,TCM (Tambalan Cepat Mantap),kg,5946.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Tempat Sampah yang Digalvanisasi (Galvanised),buah,4750000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Thinner,liter,37500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Tiang dan Lampu Penerangan Jalan LED Tiang Octagonal H-11m (Lengan Ganda), Safeligt Street LED Type SLM120, Power 120W, Color Temperature 5000K Cool Day White, Power Factor 0.95, Tegangan 70-285VAC, Hot Deep Galvanize",set,11100000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Tiang dan Lampu Penerangan Jalan LED Tiang Octagonal H-11m (Lengan Tunggal), Safeligt Street LED Type SLM120, Power 120W, Color Temperature 5000K Cool Day White, Power Factor 0.95, Tegangan 70-285VAC, Hot Deep Galvanize",set,10100000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Tiang dan Lampu Penerangan Jalan LED Tiang Octagonal H-9m (Lengan Ganda), Safeligt Street LED Type SLM90, Power 90W, Color Temperature 5000K Cool Day White, Power Factor 0.95, Tegangan 70-285VAC, Hot Deep Galvanize",set,9100000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,"Tiang dan Lampu Penerangan Jalan LED Tiang Octagonal H-9m (Lengan Tunggal), Safeligt Street LED Type SLM90, Power 90W, Color Temperature 5000K Cool Day White, Power Factor 0.95, Tegangan 70-285VAC, Hot Deep Galvanize",set,8600000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Tiang PJU Octagonal Lengan Ganda H-11,buah,5550000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Tiang PJU Octagonal Lengan Ganda H-9,buah,4550000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Tiang PJU Octagonal Lengan Tunggal H-11,buah,5000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Tiang PJU Octagonal Lengan Tunggal H-9,buah,4000000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Triplek/Plywood 12 mm,lembar,148500.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Triplek/Plywood 3 mm,lembar,65000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Triplek/Plywood 4 mm,lembar,75000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Triplek/Plywood 6 mm,lembar,85000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Triplek/Plywood 9 mm,lembar,115000.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Wiremesh (M10) Full (9.7-10.0),lembar,826847.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Wiremesh (M6) Full (5.7-6.0),lembar,285495.0,DHS Jawa Tengah
+Kota Semarang (Jawa Tengah),Bahan,Wiremesh (M8) Full (7.7-8.0),lembar,520721.0,DHS Jawa Tengah
+Kota Yogyakarta (DI Yogyakarta),Upah,Kepala Tukang,OJ,17857.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Mandor,OJ,19571.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Mekanik,OJ,17000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Operator,OJ,20571.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Pekerja,OJ,15179.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Pembantu Mekanik,OJ,17521.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Pembantu Operator,OJ,15422.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Pembantu Sopir / Driver,OJ,15179.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Sopir / Driver,OJ,20571.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Upah,Tukang,OJ,17000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Accelerator,liter,33134.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Agregat Base Kelas A,m3,226667.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Agregat Base Kelas B,m3,226667.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Agregat Base Kelas S,m3,226667.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Agregat Pecah Mesin 0-5 mm,m3,225000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Agregat Pecah Mesin 10-20 mm,m3,226250.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Agregat Pecah Mesin 20-30 mm,m3,226250.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Agregat Pecah Mesin 5-10 mm,m3,186000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Anchorage,kg,465000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Anti Stripping Agent,liter,72000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Asbuton B 5/20,kg,3784.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Asbuton B 50/30,kg,3243.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Asbuton Murni PG 70,kg,15766.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Asbuton Murni PG 76,kg,18018.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Asbuton Pracampur,kg,14865.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Asbuton Pracampur PG 70,kg,15315.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Asetilin,kg,116667.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Curah Pen 60/70,kg,12450.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Drum Pen 60/70,kg,11900.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Emulsi CMS,kg,10700.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Emulsi CRS atau RS,kg,13200.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Emulsi CSS,kg,13800.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Emulsi CSS - 1H,kg,13000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Emulsi Modifikasi Polymer,kg,17100.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Modifikasi Polimer PG 70,kg,15800.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Aspal Modifikasi Polimer PG 76,kg,16800.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Asphaltic Plug,kg,32000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Bahan Pengisi (Filler) Tambahan Campuran,kg,2200.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Bahan Tanah Timbunan,m3,150000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Bahan Timbunan Pilihan,m3,160000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Siku 120x120x12mm,kg,12150.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Siku 130x130x12mm,kg,16500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Siku 80x80x6mm,kg,12000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Struktur Galvanis (H beam 400 x 400 x 13 x 21 mm - 12 m),kg,17700.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Struktur Grade 250,kg,18000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Struktur Grade 345,kg,20000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Struktur Grade 485,kg,22000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Tulangan BjTP-280,kg,8153.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Tulangan BjTP-280 Dia. 25 (untuk dowel),kg,8198.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Tulangan BjTP-280 Dia. 32 (untuk dowel),kg,8423.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Tulangan BjTP-280 Dia. 36 (untuk dowel),kg,10394.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Tulangan BjTP-280 Dia. 38 (untuk dowel),kg,11193.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Tulangan BjTS-420A,kg,22959.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Baja Tulangan BjTS-420B,kg,8333.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Balok T Beton Pratekan bentang 60 m,m',1526610000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Bambu,batang,19500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Bangku/Kursi,buah,2525000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Batu Belah,m3,260000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Batu Kali,m3,260000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Batu Kapur,m3,178524.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Baut Jembatan Rangka ASTM A325 1/2""x3"" Half Drat",buah,4121.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Baut Jembatan Rangka ASTM A325 1/2""x4"" Half Drat",buah,5544.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Besi Plat 2 mm,kg,9279.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Beton fs 4,5",m3,1075000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Beton fs 4,5 (1-3 hari)",m3,1200000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Beton fs 4,5 (3-7 hari)",m3,1125000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Beton fs 4,5 ≤24 jam",m3,1480000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Instan K-350,kg,1290.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Instan K-400,kg,1310.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Instan K-500,kg,1630.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Instan K-600,kg,1730.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Mutu f'c 10 Mpa (setara K-125),m3,833000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Mutu f'c 15 Mpa (setara K-175),m3,866000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Mutu f'c 20 Mpa (setara K-250),m3,899000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Mutu f'c 25 Mpa (setara K-300),m3,954000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Mutu f'c 30 Mpa (setara K-350),m3,992500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Mutu f'c 35 Mpa (setara K-400),m3,1036500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton Mutu f'c 40 Mpa (setara K-500),m3,1103604.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton SCC (Self Compacting Concrete) f'c 20,m3,1031667.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton SCC (Self Compacting Concrete) f'c 25,m3,1255000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Beton SCC (Self Compacting Concrete) f'c 30,m3,1355000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Bollard Jalan (Pengaman Trotoar) dengan lampu,buah,1700000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Bollard Jalan (Pengaman Trotoar) tanpa lampu,buah,1300000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 100 x 100 x 100 cm tebal 15 cm; K-350,m',4028500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 100 x 100 x 100 cm tebal 20 cm; K-350,m',4250000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 120 x 120 x 120 cm tebal 15 cm; K-350,m',5267000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 140 x 140 x 100 cm tebal 15 cm; K-350,m',7000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 150 x 150 x 100 cm tebal 15 cm; K-350,m',8277500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 150 x 150 x 100 cm tebal 20 cm; K-350,m',6300000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 180 x 180 x 100 cm tebal 15 cm; K-350,m',10319500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 200 x 200 x 100 cm tebal 15 cm; K-350,m',11644000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 200 x 200 x 100 cm tebal 20 cm; K-350,m',10000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 300 x 300 x 100 cm tebal 15 cm; K-350,m',21360000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 40 x 40 x 100 cm tebal 15 cm; K-350,m',1056000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 50 x 50 x 100 cm tebal 15 cm; K-350,m',1409000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 60 x 60 x 100 cm tebal 15 cm; K-350,m',1775000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Box Culvert (Gorong-gorong persegi) 80 x 80 x 100 cm tebal 15 cm; K-350,m',3219000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Bridging Plate,kg,22500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cat Anti Karat Cat Meni Besi/Kayu,kg,110000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cat Dasar Beton,kg,66667.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cat Marka Thermoplastic (Type M249-98 Putih & Kuning),kg,23768.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cat Minyak Cat Besi/Kayu,kg,110000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cat Semprot Waterproof,buah,38620.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cat Tembok Eksterior,kg,140000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cat Tembok Interior,kg,111111.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cerucuk Dolken Diameter 10-15 cm,m,55000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Chipping,m3,226667.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cold Paving Hot Mix Asbuton (CPHMA),kg,2252.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Compression Seal Karet Pengisi Sambungan,m',710000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cover U-Ditch Ukuran 110x 120; t= 15 cm; K=350,buah,1301200.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cover U-Ditch Ukuran 130x 120; t= 15 cm; K=350,buah,1544400.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cover U-Ditch Ukuran 70x 120; t= 15 cm; K=350,buah,794700.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cover U-Ditch Ukuran 80x 120; t= 15 cm; K=350,buah,916300.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Cover U-Ditch Ukuran 90x 120; t= 15 cm; K=350,buah,1053200.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Curing Compound,liter,20000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Drain Grate Besi Cor (Cast Iron), tebal min. 18 mm (uk. 40 x 40)",buah,1800000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Drain Grate Besi Cor (Cast Iron), tebal min. 18 mm (uk. 60 x 40)",buah,2200000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Elastomer 25×30×3,6 cm",buah,545000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Elastomer 35×30×3,6 cm",buah,728667.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Elastomer 40×35×3,9 cm",buah,1073333.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Elastomer 45×40×4,5 cm",buah,1575000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Expansion Joint Strip Seal,m',2138500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Filler Board (tebal 1 cm),m3,1000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Filler Board (tebal 2 cm),m3,1700000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gebalan Rumput gajah/jepang,m2,40000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Geobag 80x50 cm,m3,27100.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Geomembran HDPE Tebal 1,0 mm",m2,86000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Geomembran HDPE Tebal 1,5 mm",m2,121000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Geotextile Non Woven Kelas I,m2,22374.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Geotextile Non Woven Kelas II,m2,11682.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Geotextile Non Woven Kelas III,m2,8910.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Geotextile Woven Kelas I,m2,15840.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Geotextile Woven Kelas II,m2,12870.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Geotextile Woven Kelas III,m2,9900.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Glass Bead Manik Kaca (M247-09 Potters),kg,22755.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 100x 100 cm; K-350,buah,3300000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 120x 120 cm; K-350,buah,4215000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 140x 140 cm; K-350,buah,5600000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 160x 160 cm; K-350,buah,6300000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 180x 180 cm; K-350,buah,7162500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 200x 200 cm; K-350,buah,7800000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-Gorong Kotak Beton Bertulang Ukuran 80x 80 cm; K-350,buah,2525000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-gorong Pipa Baja Bergelombang,m',2700000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-gorong Pipa Beton Ø 100 cm,m',2094600.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-gorong Pipa Beton Ø 150 cm,m',4610600.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-gorong Pipa Beton Ø 60 cm,m',790200.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Gorong-gorong Pipa Beton Ø 80 cm,m',1371800.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Guide Post Beton Mutu K-175,buah,146000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Guide Post Plastik,buah,146318.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Jembatan Bailey Uk. 15 x 4,5 x 2,1 (P per Panel = 3,048, Galvanis Hot Dip Galvanized ASTM A-123, Baut = JIS Grade 8,8 Equivalent)",unit,823308000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Jembatan Bailey Uk. 6 x 4,5 x 2,1 (P per Panel = 3,048, Galvanis Hot Dip Galvanized ASTM A-123, Baut = JIS Grade 8,8 Equivalent)",unit,447568500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Joint Sealent,kg,48000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Kawat Beso Beton (Bendrat) BWG 21 (0,81 mm)",kg,10979.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Kawat Bronjong (Mesh 80 x 100 mm) tebal 2,7 mm tepi 3,4",kg,27273.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Kawat Las 2,6 mm",dos,28441.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kayu Acuan Sengon,m3,3055556.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kayu Perancah Sengon,m3,2777778.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kreb Pracetak Jenis Kreb berparit/Gutter,buah,89000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kreb Pracetak Jenis Kreb dengan Bukaan,buah,98000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kreb Pracetak Jenis Kreb pada Pelandaian Trotoar,buah,125000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kreb Pracetak Jenis Penghalang berparit/Barrier Gutter; t= 20 cm,buah,120000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kreb Pracetak Jenis Penghalang berparit/Barrier Gutter; t= 30 cm,buah,125000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kreb Pracetak Jenis Penghalang/Barrier,buah,250000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Kreb Pracetak Jenis Peninggi/Mountable,buah,112000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Lampu Penerangan Jalan Tenaga Surya Lampu 120 Watt, 6 Strip Lampu LED Chip SMD 30*30, Baterai Lifepo4 8 V 976 WH, Panel 200 WP Monokristalin",set,5500000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Lem Resin,kg,55000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Manhole Cover Besi Cor (Cast Iron), tebal min. 18 mm",buah,1900000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Marmer Nama Jembatan 40 x 60 cm,buah,1245000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Mata Kucing Tipe Bulat,buah,180000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Mata Kucing Tipe Kotak,buah,240000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Mini Pile 25 x 25; L= 6 - 8 m (Bottom),m,412500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Mini Pile 25 x 25; L= 6 - 8 m (Middle),m,480000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Mini Pile 25 x 25; L= 6 - 8 m (Upper),m,418000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Minyak Fluks,liter,73250.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Minyak Pelumas/Oli,liter,56218.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Minyak Tanah,liter,13550.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Mortar Instan,kg,1570.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Oksigen (Isi 1 m3),tabung,40000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Paku Beton,buah,1000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Paku Kayu 4""-6""",kg,18000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pasir Beton,m3,275000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pasir Pasang,m3,250000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pasir Silica (Untuk Pekerjaan Sandblasting),kg,19460.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pasir Urug,m3,195000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Paving Blok (Model Bata 8 cm),m2,155900.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Paving Blok Go Difabel Alumunium,m2,19000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Paving Blok Go Difabel Kuning,m2,25000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Paving Blok Go Difabel Stainles,m2,58000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pemantul Cahaya (Reflector),buah,50000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Perforated Pipe Dia 4""",m,72000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Perforated Pipe Dia 5""",m,116000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Perforated Pipe Dia 6""",m,116500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Perforated Pipe Dia 8""",m,211900.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pertalite RON 90,liter,13800.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pertamax RON 92,liter,14600.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa Galvanis Dia 1,5""",m,69655.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa Galvanis Dia 2""",m,95045.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa Galvanis Dia 3""",m,156592.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa Galvanis Dia 4""",m,229167.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa Galvanis Dia 5""",m,282167.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa Galvanis Dia 6""",m,333833.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa PVC AW Dia. 1"" panjang 4 m",batang,49700.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa PVC AW Dia. 1/2"" panjang 4 m",batang,26800.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa PVC AW Dia. 2"" panjang 4 m",batang,108900.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa PVC AW Dia. 3/4"" panjang 4 m",batang,36300.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa PVC AW Dia. 4"" panjang 4 m",batang,370300.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa PVC AW Dia. 6"" panjang 4 m",batang,822500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa PVC D Dia. 3"" panjang 4 m",batang,121000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pipa PVC D Dia. 4"" panjang 4 m",batang,190300.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Plasticizer,liter,25435.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Plastik Cor tebal 125 micron,m2,6250.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Plat Bondeck tebal 1,00 mm",m2,93694.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Asam Jawa T 150-200 cm,buah,150000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Durian T 200 cm,buah,300000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Kelengkeng T 200 cm,buah,250000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Ketapan T300 cm; Dia 8 - 10 cm,buah,450000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Magga T 200 cm,buah,400000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Pule Dia 10 cm,buah,350000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Rambutan T 200 cm,buah,120000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Sawo T 150 cm,buah,120000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Tabebuya Kuning T 400 cm; Dia 20 - 25 cm,buah,1500000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Tabebuya Pink T 400; Dia 13 - 15 cm,buah,400000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Pohon Jenis Trembesi Dia 15 cm,buah,750000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Portland Composite Cement (PCC) (SNI 15-7064-2004),zak,865.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pracetak Gelagar Tipe I (H-125 L-20,6 m) (fc' 45)",buah,127000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pracetak Gelagar Tipe I (H-160 L-25,6 m) (fc' 45)",buah,162000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pracetak Gelagar Tipe I (H-170 L-30,8 m) (fc' 45)",buah,247000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pracetak Gelagar Tipe I (H-210 L-35,8 m) (fc' 45)",buah,291000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pracetak Gelagar Tipe I (H-210 L-40,8 m) (fc' 45)",buah,375000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pracetak Gelagar Tipe I (H-90 L-16,6 m) (fc' 45)",buah,96000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pracetak Gelagar Tipe U (H-120 L-16,8 m) (fc' 45)",buah,175949000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Pracetak Gelagar Tipe U (H-165 L-25,8 m) (fc' 45)",buah,259280000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Rel Pengaman,m,900000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Retarder,liter,20650.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Rubber Bitumen,kg,56255.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Rumput Vetiver Tebing,m2,25000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"S 97 x x74 cm; L= 16,600 K600",buah,75000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 100x100x120; t= 15 cm; K= 350,buah,3341500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 100x100x120; t= 20 cm; K= 350,buah,4475000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 100x120x120; t= 15 cm; K= 350,buah,3798200.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 100x120x120; t= 20 cm; K= 350,buah,5000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 40x40x120; t= 15 cm; K= 350,buah,1521400.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 40x60x120; t= 15 cm; K= 350,buah,1924500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 40x70x120; t= 15 cm; K= 350,buah,2126500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 50x70x120; t= 15 cm; K= 350,buah,2229900.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 60x70x120; t= 15 cm; K= 350,buah,2333300.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 60x80x120; t= 15 cm; K= 350,buah,2536300.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 80x100x120; t= 15 cm; K= 350,buah,3139500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Saluran U-Ditch Uk. 80x80x120; t= 15 cm; K= 350,buah,2736400.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Scaffolding 170 cm,set,660000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Semen Grouting,kg,5400.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Semen Zak 40 Kg,kg,1182.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Semen Zak 50 Kg,kg,1490.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Serat Fiber,kg,40000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Sheet Pile Baja ukuran 400 x 100 x 10.5 mm x 12 m,m,768000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Sheet Pile W-350 tipe A 1000 (350 x 1000 mm x 9 m),m,1448750.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Sirtu,m3,180000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Solar (Industry),liter,21250.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 1000 Bottom 6 - 8 m,m,2570000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 1000 Middle 6 - 8 m,m,2773500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 1000 Upper 6 - 8 m,m,2570000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 400 Bottom 6 - 8 m,m,391000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 400 Middle 6 - 8 m,m,493000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 400 Upper 6 - 8 m,m,375500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 600 Bottom 6 - 8 m,m,905000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 600 Middle 6 - 8 m,m,740000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 600 Upper 6 - 8 m,m,905000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 800 Bottom 6 - 8 m,m,1924000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 800 Middle 6 - 8 m,m,1924000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Spun Pile Dia. 800 Upper 6 - 8 m,m,1766000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Tanah Humus,m3,281124.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,TCM (Tambalan Cepat Mantap),kg,5946.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Tempat Sampah yang Digalvanisasi (Galvanised),buah,4750000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Thinner,liter,35000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Tiang dan Lampu Penerangan Jalan LED Tiang Octagonal H-11m (Lengan Ganda), Safeligt Street LED Type SLM120, Power 120W, Color Temperature 5000K Cool Day White, Power Factor 0.95, Tegangan 70-285VAC, Hot Deep Galvanize",set,11100000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Tiang dan Lampu Penerangan Jalan LED Tiang Octagonal H-11m (Lengan Tunggal), Safeligt Street LED Type SLM120, Power 120W, Color Temperature 5000K Cool Day White, Power Factor 0.95, Tegangan 70-285VAC, Hot Deep Galvanize",set,10100000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Tiang dan Lampu Penerangan Jalan LED Tiang Octagonal H-9m (Lengan Ganda), Safeligt Street LED Type SLM90, Power 90W, Color Temperature 5000K Cool Day White, Power Factor 0.95, Tegangan 70-285VAC, Hot Deep Galvanize",set,9100000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,"Tiang dan Lampu Penerangan Jalan LED Tiang Octagonal H-9m (Lengan Tunggal), Safeligt Street LED Type SLM90, Power 90W, Color Temperature 5000K Cool Day White, Power Factor 0.95, Tegangan 70-285VAC, Hot Deep Galvanize",set,8600000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Tiang PJU Octagonal Lengan Ganda H-11,buah,5550000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Tiang PJU Octagonal Lengan Ganda H-9,buah,4550000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Tiang PJU Octagonal Lengan Tunggal H-11,buah,5000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Tiang PJU Octagonal Lengan Tunggal H-9,buah,4000000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Triplek/Plywood 12 mm,lembar,137000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Triplek/Plywood 3 mm,lembar,50000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Triplek/Plywood 4 mm,lembar,58500.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Triplek/Plywood 6 mm,lembar,70000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Triplek/Plywood 9 mm,lembar,90000.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Wiremesh (M10) Full (9.7-10.0),lembar,826847.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Wiremesh (M6) Full (5.7-6.0),lembar,285495.0,DHS DI Yogyakarta
+Kota Yogyakarta (DI Yogyakarta),Bahan,Wiremesh (M8) Full (7.7-8.0),lembar,520721.0,DHS DI Yogyakarta
+Kota Bandung (Jawa Barat),Upah,Tukang Tanam,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Mekanik,OH,189700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Mandor,OH,189700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang batu,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang Kayu,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang Besi Profil/Tukang Las,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang Besi Beton,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang Cat,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang Gali,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang Pipa,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang Pekerjaan Jalan,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang Batu,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang Kayu,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang Besi profil/Tukang Las,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang Besi Beton,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang Cat,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang Gali,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang Pipa,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang Pekerjaan Jalan,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Buruh lapangan/Pekerja,OH,161636.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Buruh lapangan/Pekerja Pekerjaan Jalan,OH,161636.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Operator Terlatih,OH,189700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Operator Kurang Terlatih,OH,180300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Pembantu Operator,OH,170900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Juru Ukur,OH,189700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Hotmix,liter,12000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Aspal drum 155 kg,drum,1759405.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Aspal Curah Summitama,kg,8703.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Aspal Emulsi,kg,13000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Aspal Minyak,kg,10000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Aspal Karet,kg,71400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Aspal Curah Summitama ASPAL CURAH,kg,10000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen Tiga Roda,kg,1500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen warna,kg,20000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen Merah(Bubuk Bata),m3,12000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen/PC(50kg)PC(50kg,zak,71610.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen/PC(kg),kg,1700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen Khusus,kg,21200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen(Pc)(Untuk Mortar)Untuk Mortar,kg,1700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Chipping,kg,280.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kapur Pasang/Kapur tembok,zak,21800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tile Grout,kg,18769.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen(Pc)(Untuk Mortar)Untuk Mortar 40 kg,kg,2000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen/PC(50kg)PC(50kg,zak,85000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen/PC(kg),kg,2500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen putih,zak,133500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen Tiga Roda Tiga Roda Semen Tiga Roda Per Zak 50kg,kg,1500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen warnawarna Semen Warna AM-50,kg,21500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca polos 2 mm,m2,74700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca polos 3 mm,m2,70800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca polos 5 mm,m2,88900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca polos 8 mm,m2,112500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca Buram 12 mm,m2,110600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca raybend 5 mm,m2,84400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca raybend 8 mm,m2,150500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca es 3 mm,m2,110600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca es 5 mm,m2,108100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca patri ex lokal terpasang,m2,1051600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca patri ex Luar Negeri terpasang,m2,4433700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Glass Block 20x20 cm(ex.Luar)LN(20x20 cm(ex.Luar),dus,172500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Glass Block 20x20 cm(ex.DN)Kedawung20 x20 cm(ex.DN),dus,320600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kaca Cermin 5 mm,m2,154900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Profil Kaca,m',145900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tanah gembur Lembang,m3,193600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tanah Urug,m3,73400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir urug,m3,181500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir batu(sirtu)tersaring,m3,108900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Sirtu,m3,206500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir pasang,m3,242000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir beton,m3,327750.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Abu batu,m3,137060.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Material Agregat Kelas A,m3,262500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Material Agregat Kelas B,m3,132500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Urugan Pilihan,m3,95100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir (Untuk Mortar),m3,242000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Mat.Pilihan,m3,95100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Kelas C,m3,99500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir,m3,181500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir Selica Selica Pasir Silika,kg,4000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tanah subur/gembur,m3,193600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Tanah Timbunan (di lokasi pekerjaan),m3,133400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tanah merah (di lokasi pekerjaan),m3,192700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir Beton (di lokasi pekerjaan),m3,336466.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir Halus (untuk HRS)(di lokasipekerjaan),m3,331200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir Pasang(Sedang)(di lokasi pekerjaan),m3,325734.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir Urug (di lokasi pekerjaan),m3,279100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Abu batu,m3,143000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir,m3,241500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir batu(sirtu) tersaring batu(sirtu) tersaring sirtu,m3,137000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tanah Urug,m3,103000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Telor,m3,247500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu templek Palimanan,m2,100900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pearlstone warna,kg,10300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu granit,kg,228700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Andesit ukuran 20x 40 x 8 cmukuran 20x40x8cm,m2,244500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batako kecil uk.8x10x20,buah,1000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batako besar uk.8x20x30,buah,1300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bata merah bakar kelas lbakar kelas,buah,1300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bata merah bakar kelas ll,buah,990.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Sikat,kg,135100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kanstin 6x 15x39 cm6x15x39 cm,buah,14600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,15x39 cm9x 15x39 cm,buah,30300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Per Meter Persegi,m2,210000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kerikil,m3,183600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu gosok(apung),kg,11500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 1/2:1,m3,190600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 1:2,m3,229900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 2:3,m3,183600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 3:5,m3,184800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 5:7,m3,176500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 7:10pecah 7:10 Batu Pecah Uk. 7-10,m3,261000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 10:15,m3,228700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu belah pondasi,m3,281012.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Bronjong,m3,197500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Koral Beton Kali,m3,163700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,10x20x35(Kansteen)Batu pinggir Beton 10x20x35,buah,25500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,15x35x60(K-225)Batu Pinggir Beton 15x35x50(K-225),buah,45500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bata merah oven(klingker),buah,2300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batako berlobang(HB. 10)(HB.10),buah,3000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batako berlobang(HB.15),buah,3000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batako berlobang(HB. 20)(HB.20),buah,3000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Beton rooster,uk.20x20 cm",buah,16000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Beton dekoratif,uk.10x20x40",buah,46000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bata krawang,buah,1000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu paras,m2,262500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Kali,m3,263300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Kasar,m3,157000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Agr.Base Kelas A,m3,169400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Agr.Base Kelas B,m3,133100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Agr.Base Kelas C,m3,133100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Belah/Kerakal,m3,263300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Tanah Timbunan,m3,35800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Pecah Mesin 0-5 mm,m3,190600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Pecah Mesin 5-10 &10-20 mm5-10&10-20 mm,m3,229900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Pecah Mesin 20-30 mm,m3,183600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 2-3 cm,m3,142300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 1-2 cm,m3,142300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 0.5-1 cm,m3,154900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu,m3,263300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dengan Kawat Dilapisi Galvanis,buah,526350.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu terapistone,kg,118900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Ubin Batu Alam(Batu Andesit) Ukuran 30x30x2.5,m2,231000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Bangunan,m3,206500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Halus (di lokasi pekerjaan),m3,407700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Kasar (di lokasi pekerjaan),m3,407700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Pecah Mesin 0-5 mm(di lokasi pekerjaan),m3,288200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Pecah Mesin 20-30 mm(di lokasi pekerjaan),m3,281200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Agregat Pecah Mesin 5-10 & 10-20 mm(di lokasi pekerjaan),m3,334300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Agr.Base Kelas A(di lokasi pekerjaan),m3,267000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Agr.Base Kelas B(di lokasi pekerjaan),m3,230700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan Agr.Base Kelas C(di lokasi pekerjaan),m3,230700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Abu batu (di lokasi pekerjaan),m3,240360.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bangku Duduk Batu Alam Type A(45x45x50),buah,1286400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tactile paving/ubin pemandu,buah,146300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Kali Utuh 10cm,kg,2628.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Kali Utuh 10-15cm,kg,2888.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Kali Utuh 20-30cm,kg,4620.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tactile paving/ubin pengarah,buah,148500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bata merah bakar kelas lbakar kelas,buah,2500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bata merah bakar kelas ll,buah,1500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Andesit ukuran 20x40x8 cm,m2,212500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Belah/Kerakal,m3,362000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu belah pondasi,m3,177500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu granit Granit Alam DN Ukuran Besar per m2,kg,241500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Kali,m3,320000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Koral Beton Kali,m3,184000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 0.5-1 cm0.5-1cm,m3,176500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 1-2 cm,m3,204000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 2-3 cm,m3,171000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 10:15pecah 10:15 Batu Pecah Uk. 10-15,m3,230500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah 5:7pecah 5:7 Batu Pecah Mesin 5/7,m3,142000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 1:2mesin 1:2 batu pecah mesin 1/2,m3,204500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Batu pecah mesin 1/2:1mesin 1/2:1 batu pecah mesin 0,5-1",m3,276000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 2:3mesin 2:3 batu pecah mesin 2/3,m3,165500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 3:5mesin 3:5 Batu Pecah Mesin 3/5,m3,131500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu Sikat Dengan Kawat Dilapisi Galvanis,kg,8500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dengan Kawat Dilapisi Galvanis,buah,301500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok ICI Eksterior Decolith,gln,100200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok ICI InteriorlCI Interior,gln,503200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok Catylac Eksterior,gln,1066100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok Catylac Interior,gln,1424400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok Vinilex,gln,340400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok Sanlex,gln,504300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tahan asam,kg,55900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Marka/Spotlight,kg,82900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Duco,kg,70600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Brom Brom Cat Aluminium Brom Avian Per Kaleng 1 Kg,kg,59500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Digalvanis,kg,63100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat dasar Kayu/ Besi,liter,55900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok Wiratex,kg,31700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Marka,kg,21800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat primer,kg,89000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Indo 9000 Sealer Water Base,kg,163900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Waterprofing Emulsion Novaproof,kg,66300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Waterprofing Membrance,m',6900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Glass Bead,kg,199900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Melamik,kg,89400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat trottoar floor hardener,m2,89400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat trottoar Mowilex,m2,89400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Besi Avian,kg,69300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Anti Karat Seiv point,kg,46600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Marka Thermoplastic,kg,21800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Glass Bead,kg,33900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Marka Non Thermo,kg,26000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Politur setara Mowilex,liter,66000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Thermoplastic,kg,47200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Coldplastic,kg,26300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan pembantu pengecatan railing,Ls,2875.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan pembantu untuk pembersihan permukaan railing,Ls,575.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Sealer untuk conwood,liter,76230.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat untuk conwood,liter,103950.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Dasar Untuk Jembatan,kg,84662.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Penutup Untuk Jembatan,kg,100023.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Minyak untuk railing,kg,83160.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Ultraguard,liter,231000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Glass beads Ultraguards,kg,519750.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bahan pembantu untuk pengecatan refllektif,Ls,3500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Rak Buku Kecil Finishing HPL,unit,1326500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Rak Buku Kecil Finishing HPL,unit,1282500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kursi Baca,unit,354500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Anti Karat Seiv point Cat anti karat Flintkote Seiv Point 1 kg,kg,42000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat besi,kg,72000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat dasar Alkali,liter,175500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat dasar Kayu/ Besi,liter,63000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Cat dasar tembok,Indo 9000 Sealer Water Base",kg,94500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Digalvanis,kg,93500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Duco Duco Cat duco Propan Acrylux Per Kaleng 0.9 kg,kg,89500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat kayu Avian,kg,61500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat Marka/Spotlight,kg,84000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Ember 2.5 liter,kg,126000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tembok Catylac Eksterior DULUX 25KG,gln,1189500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Catylac Interior Cat Tembok Catylac Interior DULUX 25KG,gln,793000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Decolith Cat Tembok Eksterior Dulux Catylac Per Ember 5 Kg,gln,185500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok Sanlex Sanlex Cat tembok Sanlex Per Ember 25 kg,gln,511500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cat tembok Vinilex Vinilex Cat tembok Vinilex Per Ember 25 kg,gln,604000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,calona 51 Mowilex,m2,123000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Mowilex Cat Jalan/Trotoar Nippon Roadline Paint Per Kaleng 1 Kg,m2,70500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"lebar 60 cm(1rol=50m"")",m',31600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"lebar 90 cm(1 rol=50m"")",m',33000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Seng plat BJLS 25 uk.90x 180 cmuk.90x180 cm,lembar,214300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Seng plat BJLS 30 uk.90x 180 cm,lembar,165000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Seng gelombang BJLS 25 uk.0.90x 1.80 muk.0.90x1.80m,lembar,544500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Seng gelombang BJLS 30 uk.0.90x 1.80 muk.0.90x1.80 m,lembar,435600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Atap seng gelombang,uk.0,80x 1,80uk.0,80x1,80",lembar,65600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Atap seng gelombang,uk.1.05x2,40uk.1,05x2,40",lembar,77500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Nok stel gelombang,0.92 m0.92m",lembar,88600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Nok stel gelombang, 1.10 m1.10m",lembar,99400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Nok stel rata,1.10 m",lembar,67400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Nok stel rata,0.92 m",lembar,100000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Nok paten rata,1.05 m",lembar,110100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Nok paten gelombang,0.92 m0.92m",lembar,99800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Nok paten gelombang,1.05 m1.05m",lembar,85200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.0.2x80x180 cm,m2,89400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baja Ringan(Zinkalum),m2,225000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kuda-kuda rangka Baja Ringan(Galvalum)Cilegon Steel,m2,123900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,I W F ex DN Sllex DN SII,kg,17200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi profil ex DN-Sllex DN-SII,kg,15700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi profil ex uar Negeri,kg,16200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Besi""C"" Lip Chanel",kg,14600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Besi Hollow 4 x 4 tebal 0,8 mm",batang,64600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Besi Hollow 4 x 2 tebal 0.8 mm4 x 2 tebal 0,8 mm",batang,48900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi begel Kuda-kuda,kg,21600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baja Struktur Bj 34(Titik Leleh 210 Mpa)Krakatau Steel,buah,14500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi Bjtd40,kg,12500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baja Profil L.40.40.4L.40.4,m',152500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pipa beton betulang 60/100 cm,m',629200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"cm,panjang 1.25 m Per Buah",m',1857500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pipa beton betulang 120/100 cm,m',447600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Pipa beton jeking pracetak Uk.0,80/2,43 M",m',1460300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Pipa beton jeking pracetak Uk. 1,10/2,43 M",m',2787900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Pipa beton jeking pracetak Uk. 1,35/2,43 M",m',3973600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Pipa beton jeking pracetak Uk. 1,50/2,43 M",m',4788300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Pipa beton jeking pracetak Uk.1,80/2,43 MUk. 1,80/2,43 M",m',6187900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Pipa beton jeking pracetak Uk.2,00/2,43 M",m',7917200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton HALF SLAB Type 100.05.8,m2,344000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton HALF SLAB Type 80.05.5,m2,313700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Panel 240.40.5,lembar,166900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton H-BEAM 260,batang,301200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton H-BEAM 300,batang,343600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton H-BEAM 340,batang,432700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton H-BEAM 360,batang,453200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton H-BEAM 380,batang,473600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton H-BEAM 420,batang,534700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,PONDASI STRAUSZ Dia 40-150,titik,484800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,PONDASI STRAUSZ Dia 40-200,titik,640500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,SQUARE 25(D 16),m',409600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pracetak Gelagar Tipe I Bentang,buah,112530000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pracetak Gelagar Tipe | Bentang,buah,135520000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pracetak Gelagar Tipe | Bentang,buah,264990000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pracetak Gelagar Tipe | Bentang Tipe |Bentang,buah,471900000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pracetak Gelagar Tipe | Bentang,buah,687074300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pracetak Voided Bentang 7 M,buah,26620000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Rectangular Manhole Cover 001,set,4840000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Round Manhole Cover 001,set,2145000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,(Hx WxD),buah,3737500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kolom Pracetak uk. 120x 160x2600(untuk panel pagar),batang,360822.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kolom Pracetak uk. 120x160x3400 (untuk panel pagar),batang,490875.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"diameter 60 cm,panjang 1.25 m Per Buah",m',911500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Baja Tulangan U-32,ulir",kg,11400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Baja Tulangan U-39,ulir",kg,12500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Baja Tulangan U-42,ulir",kg,12600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Baja Tulangan U-24,polos",kg,11200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Baja Tulangan U-32,polos",kg,11400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wiremash 8 mm,m2,81800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wiremash 6 mm,m2,55700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baja Tulangan,kg,11900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baja Tulangan(Ulir)D32D32(Ulir),kg,11400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baja Tulangan U39,kg,12500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wiremesh,kg,10300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kawat Beton,kg,20790.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kawat Beton,kg,24200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi Beton,batang,11100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi Beton,batang,10500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi Beton,batang,34600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi UNP 200,batang,34600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,SUS304 Mesh,kg,139150.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kawat Beton,kg,37000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,40x40x3 cm warna,buah,31400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Teraso Cor,m3,1357800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tegel Classic Stone 30x30x3 cm(Natural)KIA,buah,6100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tegel Classic Stone 30x30x3 cm(Warna)KIA,buah,4600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Tegel Classic Keramik 30x 30x0,06 cmKIA",m2,4600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tegel Classic Keramik 30x 30x0.05 cmKIA,m2,4600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Porcelein 11 x 11 warna standar DNROMAN,m2,87000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Porcelein 11x11 warna khusus DNKIA,m2,52500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"10/10,10/20,20/20,KW I putih/polos",m2,56400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"5/20,corak warna,anti slip",buah,43600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plint Keramik 10/20 warna,buah,49700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,5x20)cove artistik (5x5x20),buah,44300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"10/20,corak warna,anti slip polos",m2,47900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"15/15,putih polos15/15,corak warna,anti slip",m2,50100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"15/15,corak warna,anti slip",m2,67900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"20/20,corak warna,anti slip",m2,60900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"20/20,KW I putih/polos",m2,61300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"20/25,putih/polos,",m2,57300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"20/25,corak warna,",m2,52800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"30x30,DN putih polos",m2,52300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"30x30 DN warna/corak,anti slip",m2,68500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,warna/corak,m2,62000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"warna/corak,anti slip",m2,34400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Stairmosing keramik 10/20,m',51600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Stairmosing keramik FiberROMAN,m',11000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Granit alam LN ukuran besar,m2,100700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Granit alam LN ukuran kecil,m2,145700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Granit alam DN ukuran besar,m2,232300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Granit alam DN ukuran kecil,m2,175200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Lantai Vinil karet,30 x30DAEJI",lembar,53900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Lantai Vinil motif kembang,30x30DAEJI WS 88",lembar,57900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Granito tile essenza 40 x 40 polis40x40 polis,m2,132000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Granito tile essenza 40x 40 unpolis40 x40 unpolis,m2,236300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Granito tile essenza 60x 60 polis,m2,234900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Granito tile essenza 60x 60 unpolis60 x 60 unpolis,m2,302600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Reikho Beighe ""Marmer Ujung Pandang""",m2,510600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Reikho Beighe""Marmer Ujung Pandang""",m2,431700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Reikho Beighe ""Marmer Ujung Pandang""",m2,1499700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Reikho Beighe ""Marmer Ujung Pandang""",m2,907500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tegel/Ubin Difabel Kuning Strip 30x30x3Bar Tile,buah,36300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tegel/Ubin Dot Tile,buah,31100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Ubin Classic Tile uk. 30 cm x 30 cm x 3 cm Dbintang(Natural),buah,46000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dbintang,buah,47500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dbintang,buah,48000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pumarin,m2,875000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Granit China Red ukuran 60 cmx 60 cmx1,8 cm Pumarin",m2,725000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Granit Star White Bakar ukuran 60 cm x 60 cmx 1,8 cm Pumarin",m2,565000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Polos tebal 0.5 mm,lembar,33400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,0.5mm,lembar,39300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"palentong pres Molen Oven KW.I,ex Jatiwangi",buah,2500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"pres Molen Oven KW.I,ex Jatiwangi",buah,3800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Stand.KIA,buah,11200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,keramik warna Khusus.KIA,buah,16400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Atap Genteng bubung Pres bulat Jatiwangi,buah,9300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"kodok natural,ex jatiwangi",buah,2500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"kodok qlazuur,ex jatiwangi",buah,3600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"palentong super/besar glazuur,ex Jatiwanqi",buah,3500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"beton natural,Rengqanis",buah,7100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"beton warna 14,4/m2",m2,8400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,14.4/m2 natural ex Jatiwangi Morando natural ex,m2,7700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Jatiwangi,buah,3500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Jatiwangi,buah,4600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bubung genteng keramik warna Stand.KIA,buah,29200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bubung genteng keramik warna Khusus.KIA,buah,49700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bubung genteng metal Sakura,buah,33500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Genteng bubung segi tiga/bulat,natural",buah,10800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Renqqanis GENTENG BUBUNG JATIWANGI,buah,8500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Renqqanis Genteng Bubung Cisangkan Mawar,buah,9000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Genteng bubung natural Morando,buah,3700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Genteng bubung glazuur Morando,buah,16300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Genteng bubung palentong besar natural,buah,10900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Genteng bubung palentong besar glazuur,buah,16600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,ULR-7(1=920mmx0.50mm),m2,53900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Nok atap aluminium std.,m2,179000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Atap sirap kelas |(1 m2=80 lb)kelas |(1m2=80lb),lembar,194500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Nok Allumunium Std,m',178300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton Monier Centurion Per Buah,m2,7500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bubung genteng keramik warna Stand.KIA,buah,28500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,20-30cm,m',167400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,dia Dalam 45 cm,m',1405500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,45-75cm,m',508200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,75-95cm,m',1051500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,95-120 cm,m',3957600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,120-150cm,m',4740900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,40x50 tebal 6 cm,buah,595000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,50x50 tebal 7 cm,buah,764400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 20 cm-1,00 m",buah,106500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 30 cm-1,00 mdia 30 cm-1,00m",buah,167400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 40 cm-1,00 mdia 40 cm-1,00m",buah,221600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 50 cm-0,50 m50 cm-0,50m",buah,175500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 60 cm-0,50 m",buah,254100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 80 cm-0,50 m",buah,671700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 100 cm-0,50 m dia 100 cm-0,50m",buah,525800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis tanah dia 10 cm-0,50 m",stk,62400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Pipa tanah dia 15 cm-0,50 m",stk,62400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis tanah dia 20 cm-0,50 mdia 20 cm-0,50m",stk,53300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis tanahdia 25 cm-0,50 mdia 25 cm-0.50 m uk. 0,80/1,20 M""",stk,20000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"uk.0,80/120 M""",m',3144800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"k.100/120 M""",m',3931000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"uk1.20/1,20 M"" uk1,20/1,20 M""",m',5338200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"uk.150/120 M""",m',7579200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Pasangan Gorong-gorong Pracetak(Box Culvert) uk.2,00/1,20 M""",m',10752400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tutup Saluran Berongga Utk Gorong-Gorong/Gully Grating 001,set,2850000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,003,set,3900000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tutup Saluran Air/Talang Air 002,set,1375000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tutup Saluran Air/Talang Air 003,set,1485000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tutup Saluran Air/Talang Air 001,set,577500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 100 cm-0,50 mdia 100 cm-0,50m",buah,283500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 20 cm-1.00 mdia 20 cm-1,00 m",buah,94500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 30 cm-1,00 m",buah,126000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 40 cm-1,00 mdia 40 cm-1,00m",buah,136500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,dia 60 cm-0.50 m Buis beton dia 60 cm-1.00m,buah,273000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Buis beton dia 80 cm-0,50 mdia 80 cm-0,50 m dia 80 cm-1m",buah,488000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"uk.3x30mmx6m(4,21 Kg)",batang,59500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plat besi tipis 1 mm,kg,76400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Plat besi tipis 0,5 mm",kg,47900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plat besi tipis 2 mm-5 mm,kg,74600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plat besi tipis 5 mm-10 mm,kg,187000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plat besi tipis 10 mm ke atas,kg,198100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Steel Grating(Dgn Rangka Angkur,",buah,830900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plat Baja,kg,14500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pipa Baja,kg,38300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Stainless Plate Stainless,m',7600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Solignem(1 blek=10 liter),liter,7500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plint coat,kg,39300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dempul halus/Impra(Wood Filler),kg,46800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Terpentin,liter,11800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Thiner A,liter,28875.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Thiner B,liter,36800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kompon,kg,32100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plamir tembok,kg,16600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dempul kayu,kg,23900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Meni besi/kayu,kg,22400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Zinchromate,kg,35500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Sirlak ex India,kg,160300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Spirtus,liter,10500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Oker putih,kg,21300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Oker warna,kg,27400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dempul Plitur,kg,293.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dempul lilin,kg,8700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dempul plastik,kg,34600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plitur jadi DX,liter,28900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plitur jadi Ultran,liter,57800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Minyak Pelebur Cat(Soda api),klg,42600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Thinner,liter,26700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dempul kayu,kg,31500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Meni besi/kayu,kg,26500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Minyak Pelebur Cat (Soda api),klg,52500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Driver Lampu LED Strip,buah,3000000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wireless Light Controller,buah,3900000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wireless Light Switch,buah,5800000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wireless Light Controller,unit,3500000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Master LED Downlight,unit,2850000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Master LED Bulb,unit,199000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Jasa Instalasi Lampu LED Strip,unit,47058824.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Isolasi pipa Spek: kualitas bagus,buah,18900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem paralon Spek:Kualitas bagus,buah,81000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Gunting Steak Spek:Kualitas bagus,buah,94900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem Pronto Stick 8 gram,buah,5800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem Pronto Stick 15 gram,buah,8300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem Pronto Stick 35 gram,buah,17100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem UHU Stick 21 gram,buah,18800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem UHU Stick 35 gram,buah,23500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,LemUHU All Puposes 35 gram,buah,29600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Spray Mount Artist Adhesive,buah,144800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Spray Mount Super 77,buah,135800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem Fox PVAc 150 gram,buah,16400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem Fox PVAc 450 gram,buah,47200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem Fox Chloroprene kuning 70 gram,buah,17500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem FOX Aibon,buah,9600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem FOX 1 Kg,botol,51200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Power Glue Lem Power Glue General,buah,3100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Power Glue Alteco,buah,10100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Lem Inakol sedang,botol,10700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem kuning(Aibon),kg,19000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem putih fox,kg,19700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Fox,buah,51200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,BESI BETON 6mm,kg,15600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,BESI BETON 8mm,kg,15600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,BESI BETON 10mm,kg,15600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,BESI BETON 12mm,kg,15600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,BESI HANDLE HH,unit,80000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Borderan,buah,20000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Head Flash Light,buah,102000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bloor Flash Light,buah,100000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Masker Biasa,buah,15400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lampu Senter(Charger),buah,320600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Head Flash Ligh,buah,71600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Lampu Pengaman Lalu Lintas 3""Pengaman Lalu Lintas",buah,122000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Meteran 5 m,buah,25300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Meteran Rol 30 m (Pita)30 m(Pita),buah,186600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Meteran Rol 50 m Krisbow,buah,189100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Meteran Roda Digital,buah,878800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Singkup Gagang Besi,buah,49400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Singkup Saluran,buah,80200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Singkup gagang kayu,buah,94000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cangkul,buah,43600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Linggis Besar,buah,41100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Balincong,buah,82500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Belehem,buah,75000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Leker Besi,buah,76000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Gacok 4 Gigi Gagang Pendek Besi,buah,28500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Gacok 4 Gigi Gagang Panjang Kayu,buah,34300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Plat Eiser,buah,342200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Patik,buah,89400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kampak,buah,69200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Palu 10 kg Martil,buah,43100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bakrik dengan gagang Besi 3m,buah,273800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Bakrik dengan gagang Kayu 3m,buah,180100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Palu 2,5 kg2,5kg",buah,23500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Palu 5 kg,buah,306700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Parang,buah,217900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Golok baja,buah,113300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Gotongan Aspalartco,fuleco",buah,489800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Sapu Lidi Ikat Besar,buah,40600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Sikat Injuk,buah,17600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Sikat Kawat Baja,buah,18800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Gergaji Kayu Tekiro,buah,87000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Gergaji Besi,buah,198429.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pengki Karet,buah,24700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pengki Plat,buah,9800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Palu Timbris 10 kg Bodem 10 kg,buah,961600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kikir Besi,buah,13700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Rubber Tile Floor,m2,77100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Terpal Kanvas,buah,47900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,List Allumunium,m',32500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,HPL,lembar,108100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Jet ShowerPALOMA,set,172900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Fix shower ex toto tx422SC,set,1206500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Mix shower tx417SBCBR,set,2413000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Sanding sealler Propan,kg,89200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Rel Pintu GeserPALOMA,set,605100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Profil kayu jati,m',162100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Finishing Melamic,m',133100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Profil Kayu Samarinda,m',40400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Marmer Travertine,m2,2359000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Calsiplank,m',41500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Path LockSOLID,set,57500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lever handleDEKKSON,set,244900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,LockcaseDEKKSON,set,156400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Escutheon DEKKSON,set,251400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Flush Bolt DEKKSON,set,74200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,RambucisDEKKSON,set,54100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Engsel CasementDEKKSON,set,45800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Door HolderDEKKSON,set,24900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Inbow-dus,buah,5500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Stop kontakBROCO,buah,22400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Saklar EngkelBROCO,buah,21700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Saklar SeriBROCO,buah,14300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lampu SL Philip 25 Watt,buah,60600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Fiting Lampu,buah,4700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lampu TL 18 watt +Asesoriesphilips,buah,81400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lampu TL 36 watt+Asesories 36 watt +Asesories,buah,387600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lampu DL Philip 18 Watt philips,buah,54400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kran wastafelONDA,buah,136200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kran wudhuONDA,buah,59300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton conblock(CB.10),buah,10200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton conblock(CB. 15)(CB.15),buah,15500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Beton conblock(CB.20),buah,20800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batacote,kg,5800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paving block Natural 8 cm,m2,121000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paving block Warna 8 cm,m2,131900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paving block Natural 6 cm,m2,183400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paving block Warna 6 cm,m2,213675.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kansteen Pavingblock Kansteen,buah,30300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pinggir beton uk.6x 15x40 cm(Kaansteen),buah,30400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pinggir beton uk. 10 x20x35 cm(Kaansteen),buah,36000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Grass block 45x30x8 cm45x30x8cm,buah,11500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Grass block 45x 30x10 cm45x30x10 cm,buah,14000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Con Block uk.8x20x40,buah,5500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pinggir beton uk. 15x35x60 cm(K-225),buah,63.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kansteen Pavingblock 6.15.39,buah,19400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kerb Type A 16.18.28.60.,buah,110880.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kerb Type B 16.18.40.60.,buah,105300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kerb Type C(Jalan masuk)16.18.15.60.,buah,63000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kerb Type D(Tali air) 16.18.30.60.Type D(Tali air)16.18.30.60.,buah,105300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kerb Type L 16.18.30.60.,buah,45600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kerb Type E 20.25.30.60.,buah,197700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Grevel beton 1/2 U 20 cm,buah,63900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Grevel beton 1/2 U 30 cm,buah,87900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Grevel beton 1/2 U 40 cm,buah,120400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paving Blok (Natural),m2,183400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.05x2.10x5mm,lembar,67400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.05x2.40x4mm,lembar,73700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.05x2.70x4mm,lembar,87600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.05x3.00x4mm,lembar,97600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.10x1.80x5mm,lembar,38900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.10x2.00x5mm,lembar,75000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.10x2.25x5mm,lembar,86100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.110x2.50x5mm,lembar,92200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Atap asbes gelombang,uk.1.10x3.00x5mm uk.1.10x3.00x5",lembar,107400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.110x2.00x6mm,lembar,85900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.10x2.25x6mm,lembar,105900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.110x2.50x6mm,lembar,119300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,uk.1.10x3.00x6mm,lembar,17000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Atap genteng asbes, uk.0.85x 1.15uk.0.85x1.15",lembar,82900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Nok genteng asbes,pj. 1.15 mpj.1.15 m",buah,49400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Eternit asbes semen,1.00x1.00x3,5 mm",lembar,59700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Eternit asbes semen,1.00x1.00x4,0mm",lembar,64200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Eternit asbes semen,1.00x1.00x5,0 mm1.00x 1.00x5,0 mm",lembar,70800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Eternit asbes semen,1.00x1.00x6.0 mm1.00x 1.00x6,0 mm",lembar,75600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku 1 s/d 2 1/2 cm,kg,21300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku 4 s/d 7 cm4 s/d 7cm,kg,19100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku uk.8 s/d 12 cm,kg,19100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku beton 2 s/d 5 cm,buah,440.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku beton 7 cm,buah,710.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku beton 10 cm,buah,880.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku Ramset/dina bolt,buah,9000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku anti karat u/genteng metal(35.00 m2/kg),kg,46100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku seng,kg,29600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku kaca,kg,15000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku eternit,kg,15200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku triplex,kg,21300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku kait lengkap,buah,1500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Paku cacingcacing Paku Cacing ukuran 3/8"", 1/2"",5/8""",kg,121000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku gipsum anti karat(20.00m2/kg)(20.00 m2/kg),kg,20400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku Skrup,dus,54100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku pancing,buah,1300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Paku,kg,19400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem kayu u/HDM.(1 tube/10.00 m2)Alifatik Presto dn,tube,23500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Sealent Allumunium ke Kaca,tube,19500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Sealent Allumunium ke dinding,tube,17000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem kuning(Aibon),kg,4400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem putih fox,kg,32100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Fox,buah,48500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Perekat Lemkra,kg,24200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Perekat Sambungan WarnaSIKA,kg,58400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem Beton,kg,84700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Ampelas,lembar,8663.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,cm),buah,1200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,dia.10 mm s/d 16 mm(5cm),buah,11600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Skrew,buah,5000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,32516X2-A 325Panjang 4-5 Cm,buah,59900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,8 Mm Panjang 4-5 Cm,buah,8800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baut 12 Mm Panjang 2 Cm,buah,7400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baut 2,dus,18100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Angkur Dia.22 Mm P=800 Mm,set,151800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pagar BRC lengkap Tiang(Tanpa Pondasi),m2,174700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Panel Sunscreen Aluminium Colourbond,m2,117100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pintu Aluminium +kunci berikut kusen,unit,1818800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Folding gate,m2,601500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Rolling door biasa,Type one sheet",m2,540300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Railling tangga besi stainless,m2,557200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Guard Rill,m',1123700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Rel Handerson lengkap PALOMA,m',560100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Rel Marathon 1 PintuPALOMA,buah,486200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi Pagar Brc,m',354400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pagar Kayu Setara Jati(6X3),m',169000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Tiang Pagar Kayu(8X8),T=100 Cm",batang,74200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Vlok Sock 2"" X 1 1/4"" Spek:eduser plok sock socket pipaPVC",buah,19500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 3:5 Spek: di lokasi pekerjaan,m3,324000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Batu pecah mesin 1:2 Spek:di lokasi pekerjaan,m3,334000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Abu batu Spek: di lokasi pekerjaan,m3,291000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Pasir beton Spek:di lokasi pekerjaan,m3,337000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,perlembar,lembar,1800000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,saluran penanganan limbah,set,60000000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,pipa,buah,79800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,derajat ELBOW Knee Keni L 0.5 inch,buah,10600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,cabang 3 rak gantungan,buah,36000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Faucet Socket 1 Inch SR SOK 1 2 IN AW SOCKET 05INCH,buah,8000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Perbaikan Rumah Tidak Layak Huni,unit,22000000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Baut gongsol Spek:Baud Gongsol 15(1/2x6),buah,40000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kayu Kaso Spek:Ukuran 4x6 Grade A,buah,36000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Orange-Black Handle Wood Chisel,buah,36300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,KRISBOW Cold Chisel,buah,63800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TEKIRO Letter Punch,set,129000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wipro Dead Blow Hammer,buah,139700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TRUSCO Standard Punch,buah,319000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TEKIRO Claw Hammer,buah,68200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,monotaro Auto Center Punch With A Carbide Tip,buah,129800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Snap-on Plastic Tip Hammer,buah,1298000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,KRISBOW Claw Hammer Rubber Grip,buah,86900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,monotaro Stone Head Hammer,buah,47300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,FATOOLS Hollow Punch,buah,31900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TRUSCO Belt Punch,buah,42900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TRUSCO Steel Compass,buah,139700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Mokuba Octagon Crowbar,buah,429000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TRUSCO Bar,buah,139700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Vessel Head Only For Plastic Hammer,buah,22000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wipro Copper Hammer Handle PVC,buah,599500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Wipro Spring Caliper Outside,buah,35200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,KRISBOW Ratchet Handle Lever Sq,buah,339900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,monotaro Screwdriver Set,buah,249700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,X-Line,buah,103400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TEKIRO T-Type Screwdriver,buah,49500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TORA Sekop Metal Handle,buah,159500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kenmaster Skop Pasir,buah,89100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Kenmaster Sendok Semen,buah,13200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TAGPro Full Coating Iron Handle Hoe,buah,119900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,monotaro Angled Ratchet Wrench Set,buah,189200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Toolbox 821551-8 Tool kit,buah,350000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Mesin Bor Beton Impact Drill 10mm Benz,buah,215000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,BOR TANGAN CORDLESS 13 MM|48VF|JLD|POWER TOOL,set,600000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Mesin Gerinda Tangan/Small Angle Grinder 10mm GWS060,buah,370000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Krisbow set toolkit perkakas 28 pcs,set,435000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Potong Kayu Gerinda,buah,121800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,KAPAK GAGANG VEBER,buah,63379.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Kuas Cat Eterna 633 1"" 11/2"" 2"" 21/2"" 3"" 4""-1 INCH",buah,4000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tang Kakak Tua/Gegep Kepala Besar 6 Inch,buah,29000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Tang piston besar 6"" carrson",buah,95000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TANG JEPIT KEPALA AKI BESAR,buah,45000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"Tang Potong Kabel Besar 10"" inch Cable Cutter Pliers",buah,79500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tang Gegep/Catut Kepala Besar 10 inch Carpenter Pincer,buah,65000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,"tang kombinasi 9""",buah,40000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,KAPUSI ALAT TANG POTONG RANTAI BODY BESAR,buah,61500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tang Jepit Buaya/Press Besar,buah,50000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Tang Massa 600 Amp BODY BESAR Earth Clamp Mass,buah,62000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,BODY BESAR,buah,30000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Cutter CRV 42 Inc,buah,420000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TANG LANCIP LISTRIK JUMBO 6 INCH TL-2002,buah,30000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,AC/DC,buah,7500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Temperatur Soldering-Solder Lurus,buah,70000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,TOOL'S SOLDER WICK,buah,8500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem tembak glue gun stick cair lengket refill 20W/40W-20 Watt,buah,7500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Lem tembak glue gun stick cair lengket refill 20W/40W-20 Watt,buah,1385.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Dongkrak Gunting/Dongkrak Jembatan 650kg,buah,129900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,ASPHALT TANKER,jam,504900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Asphalt Liquid Mixer,jam,59400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Chip Spreader 3 Ton,jam,34600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Asphalt Sprayer Towed 400 Itr 400 ltr,jam,313400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Asphalt Mixing Plant 30 t/h,jam,432200.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"Asphalt Finisher 1,82 M",jam,194500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Amp,jam,8751100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Asphalt Distributor,jam,350400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Asphalt Mixing Plant,jam,6245000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,ASPHALT FINISHER,jam,1217600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,ASPHALT SPRAYER,jam,65800.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Tandem Roller 6-10 ton,jam,381900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Roller Towed Vibrator 2-3 ton,jam,81100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Roller Vibrator ped 1 ton,jam,64900.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,3-Wheel Roller 3,jam,108100.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Tamper,jam,91400.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,MOTOR GRADER MOTOR GRADER 135 HP,jam,200000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,MOTOR GRADER MOTOR GRADER 180 HP,jam,263000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"WHEEL LOADER WHEEL LOADER 2,0M3",jam,242000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"WHEEL LOADER WHEEL LOADER 3,0M3",jam,273500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"WHEEL LOADER WHEEL LOADER 3,2M3",jam,294500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"WHEEL LOADER WHEEL LOADER 1,2M3",jam,147500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"WHEEL LOADER WHEEL LOADER 1,2M3",jam,168500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"WHEEL LOADER WHEEL LOADER 1,5M3",jam,179000.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"WHEEL LOADER WHEEL LOADER 1,8M3",jam,210500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"WHEEL LOADER WHEEL LOADER 0,8M3",jam,126500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,Conc.Mixer,jam,43300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"Concrette Mixer 0,25 m3/10 HP",jam,20600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,"Concrette Mixer 0,5 m3/20 HP",jam,43300.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Alat,CONCRETE MIXER 0.3-0.6 M3,jam,121600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Pekerja,OH,161636.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Tukang,OH,160500.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Kepala Tukang,OH,177600.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Upah,Operator,OH,189700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Semen Portland,kg,1700.0,DHS Jawa Barat
+Kota Bandung (Jawa Barat),Bahan,Besi Beton Polos,kg,11200.0,DHS Jawa Barat
