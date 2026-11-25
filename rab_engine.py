@@ -1876,12 +1876,15 @@ table.hsp tr.grand td { font-weight:800; background:#FEF3D7; font-size:15px; }
 .kt-h { font-weight:700; color:#0B4EA2; font-size:13px; padding:6px 0; border-bottom:2px solid #D5DDEB; }
 .kt-c { font-size:13.5px; color:#0F2A4A; padding:4px 0; line-height:1.35; }
 .kt-s { font-size:11.5px; color:#8A99B0; }
+[data-testid="stSidebar"] div[role="radiogroup"]:has(label:nth-of-type(8)) label:nth-of-type(n+4):nth-of-type(-n+6) {
+  margin-left: 30px; width: calc(100% - 30px); padding: 6px 12px; border-left: 2px solid #D5DDEB; border-radius: 0 10px 10px 0; }
+[data-testid="stSidebar"] div[role="radiogroup"]:has(label:nth-of-type(8)) label:nth-of-type(n+4):nth-of-type(-n+6) p { font-size: 13px; font-weight: 500; }
+[data-testid="stSidebar"] div[role="radiogroup"]:has(label:nth-of-type(8)) label:nth-of-type(n+4):nth-of-type(-n+6):has(input:checked) { border-left-color:#4F46E5; }
 </style>
 """
 
 P_DASH, P_PANDUAN, P_HARGA = "🏠  Dashboard", "📖  Petunjuk", "💲  Harga Satuan Dasar"
-_IND = "\u00a0" * 6
-P_H_ALAT, P_H_BAHAN, P_H_UPAH = _IND + "Sewa/Beli Peralatan", _IND + "Material", _IND + "Upah Tenaga Kerja"
+P_H_ALAT, P_H_BAHAN, P_H_UPAH = "↳  Sewa/Beli Peralatan", "↳  Material", "↳  Upah Tenaga Kerja"
 P_KATALOG, P_RAB = "📚  Analisa Pekerjaan", "🧮  Pembuatan RAB"
 SUB_HARGA = {P_H_ALAT: "Alat", P_H_BAHAN: "Bahan", P_H_UPAH: "Upah"}
 
