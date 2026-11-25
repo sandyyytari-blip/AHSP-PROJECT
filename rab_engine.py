@@ -23,7 +23,7 @@ import json
 import math
 import re
 from collections import Counter, defaultdict
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from functools import lru_cache
 from pathlib import Path
 
@@ -1863,12 +1863,22 @@ button[kind="secondary"] { border-radius:10px; border:1px solid #D5DDEB; font-we
 @media (max-width: 900px) { .cards, .steps { grid-template-columns: repeat(2,1fr); } .hero { padding:24px; } }
 [data-testid="stVerticalBlockBorderWrapper"]:has(> div > [data-testid="stVerticalBlock"] h5) { background:#fff; border-radius:14px; }
 .stButton > button { white-space: nowrap; }
+.hsp-wrap { overflow-x:auto; border:1px solid #E6EAF2; border-radius:12px; background:#fff; margin:8px 0 14px; }
+table.hsp { width:100%; border-collapse:collapse; font-size:13.5px; color:#0F2A4A; }
+table.hsp th { background:#EAF1FF; color:#0B4EA2; font-weight:700; padding:9px 10px; text-align:center; border-bottom:1px solid #D5DDEB; }
+table.hsp td { padding:8px 10px; border-bottom:1px solid #EEF1F6; vertical-align:top; }
+table.hsp td.c { text-align:center; } table.hsp td.r { text-align:right; font-variant-numeric:tabular-nums; } table.hsp td.mut { color:#8A99B0; font-style:italic; }
+table.hsp tr.sec td { background:#C9D6E6; font-weight:800; letter-spacing:.03em; }
+table.hsp tr.sub td { font-weight:700; background:#FAFBFE; }
+table.hsp tr.tot td { font-weight:800; border-top:2px solid #0F2A4A; }
+table.hsp tr.grand td { font-weight:800; background:#FEF3D7; font-size:15px; }
+.pill { color:#fff; font-size:11px; font-weight:600; padding:2px 8px; border-radius:99px; white-space:nowrap; }
 </style>
 """
 
 P_DASH, P_RAB, P_PANDUAN = "🏠  Dashboard", "🧮  Hitung RAB", "📖  Panduan"
-P_HARGA = "💲  Harga Satuan Dasar"
-PAGES = [P_DASH, P_HARGA, P_RAB, P_PANDUAN]
+P_HARGA, P_KATALOG = "💲  Harga Satuan Dasar", "📚  Katalog AHSP"
+PAGES = [P_DASH, P_HARGA, P_KATALOG, P_RAB, P_PANDUAN]
 
 
 def _esc(x) -> str:
@@ -2137,6 +2147,129 @@ def _page_rab(baris: list[Baris], hasil: dict, p: Params):
         _footer(n)
 
 
+def _id(x: float, maks: int = 4) -> str:
+    """Format angka gaya Indonesia (titik ribuan, koma desimal), desimal dipangkas bila nol."""
+    s = f"{x:,.{maks}f}"
+    if "." in s:
+        s = s.rstrip("0").rstrip(".")
+    return s.replace(",", "_").replace(".", ",").replace("_", ".")
+
+
+def _idr(x: float) -> str:
+    return _id(x, 0) if abs(x) >= 1000 else _id(x, 2)
+
+
+_WARNA_STATUS = {STATUS_OK: "#0E9F6E", STATUS_PERIKSA: "#D97706", STATUS_ACUAN: "#D97706", STATUS_MANUAL: "#2563EB", STATUS_NOL: "#DC2626"}
+
+
+def _tabel_hsp_html(h: HasilAHSP, komp: dict, p: Params) -> str:
+    kolom = ("No", "Uraian", "Satuan", "Koefisien", "Harga Satuan (Rp)", "Jumlah Harga (Rp)", "Status harga")
+    out = ['<div class="hsp-wrap"><table class="hsp"><thead><tr>' + "".join(f"<th>{k}</th>" for k in kolom) + "</tr></thead><tbody>"]
+    judul_total = {"tenaga": "Jumlah Biaya Upah Tenaga Kerja", "bahan": "Jumlah Biaya Komponen Material", "alat": "Jumlah Biaya Sewa Peralatan"}
+    tot = {"tenaga": h.A, "bahan": h.B, "alat": h.C}
+    for kk, kat, huruf, nama in KAT_AHSP:
+        jdl = {"tenaga": "UPAH TENAGA KERJA", "bahan": "BAHAN MATERIAL", "alat": "SEWA PERALATAN"}[kk]
+        out.append(f'<tr class="sec"><td>{huruf}</td><td colspan="6">{jdl}</td></tr>')
+        if not h.rows[kk]:
+            out.append('<tr><td></td><td colspan="6" class="mut">- tidak ada komponen -</td></tr>')
+        for n, r in enumerate(h.rows[kk], start=1):
+            res = komp.get((kat, r["key"]), {}).get("res")
+            stt = res.status if res else "-"
+            ket = f'<span class="pill" style="background:{_WARNA_STATUS.get(stt, "#6B7C93")}">{_esc(stt)}</span>'
+            out.append(f'<tr><td class="c">{n}.</td><td>{_esc(r["uraian"])}</td><td class="c">{_esc(r["satuan"])}</td>'
+                       f'<td class="r">{_id(r["koef"], 4)}</td><td class="r">{_idr(r["harga"])}</td><td class="r">{_id(r["jumlah"], 0)}</td><td class="c">{ket}</td></tr>')
+        out.append(f'<tr class="sub"><td colspan="5" class="r">{judul_total[kk]}</td><td class="r">{_id(tot[kk], 0)}</td><td></td></tr>')
+    out.append(f'<tr class="tot"><td colspan="5" class="r">Jumlah Harga Satuan Pekerjaan</td><td class="r">{_id(h.D, 0)}</td><td></td></tr>')
+    out.append(f'<tr class="sub"><td colspan="5" class="r">Biaya Umum dan Keuntungan ({p.overhead_profit * 100:g}%)</td><td class="r">{_id(h.E, 0)}</td><td></td></tr>')
+    out.append(f'<tr class="grand"><td colspan="5" class="r">Total Harga Satuan Pekerjaan</td><td class="r">{_id(h.F, 0)}</td><td></td></tr>')
+    out.append("</tbody></table></div>")
+    return "".join(out)
+
+
+def _page_katalog(p: Params):
+    ss = st.session_state
+    _judul("Katalog AHSP", "Telusuri seluruh analisis harga satuan pekerjaan SE DJBK 47/2026. Pilih satu baris untuk melihat koefisien dan harga satuannya.")
+    df = katalog_df()
+    c1, c2 = st.columns([2, 3])
+    divs = ["(Semua divisi)"] + [f"{k} - {n}" for k, n in df[["div", "div_nama"]].drop_duplicates().itertuples(index=False)]
+    dsel = c1.selectbox("Divisi", divs, key="kt_div")
+    sub = df if dsel == divs[0] else df[df["div"] == dsel.split(" - ")[0]]
+    kels = ["(Semua kelompok)"] + [f"{k} - {n}" for k, n in sub[["kel", "kel_nama"]].drop_duplicates().itertuples(index=False)]
+    ksel = c2.selectbox("Kelompok pekerjaan", kels, key="kt_kel")
+    if ksel != kels[0]:
+        sub = sub[sub["kel"] == ksel.split(" - ")[0]]
+    q = st.text_input("🔎 Cari uraian / kode (semua kata harus ada)", key="kt_q", placeholder="mis. plesteran 1:4  |  bata merah  |  3.9.5.5")
+    if q.strip():
+        m = pd.Series(True, index=sub.index)
+        for t in [t for t in re.split(r"\s+", q.lower().strip()) if t]:
+            m &= (sub["uraian"].str.lower() + " " + sub["kode"]).str.contains(re.escape(t), regex=True)
+        sub = sub[m]
+    MAXR = 300
+    st.markdown(f'<div class="cards" style="grid-template-columns:repeat(3,1fr)">'
+                f'<div class="card" style="--c:#0B4EA2;--bg:#E6F0FE"><div class="ic">📚</div><div class="n">{len(sub)}<small>analisis</small></div><div class="l">dari {len(df)} AHSP pada katalog</div></div>'
+                f'<div class="card" style="--c:#10B981;--bg:#DCF7EC"><div class="ic">🗂️</div><div class="n">{sub["div"].nunique()}<small>divisi</small></div><div class="l">{sub["kel"].nunique()} kelompok pekerjaan</div></div>'
+                f'<div class="card" style="--c:#F59E0B;--bg:#FEF3D7"><div class="ic">🛒</div><div class="n">{len(ss.vol_katalog)}<small>dipilih</small></div><div class="l">Pekerjaan dari katalog di daftar volume</div></div></div>',
+                unsafe_allow_html=True)
+    if sub.empty:
+        st.info("Tidak ada AHSP yang cocok dengan filter ini.")
+        return
+    if len(sub) > MAXR:
+        st.caption(f"Ditampilkan {MAXR} pertama dari {len(sub)} - persempit dengan filter/pencarian.")
+    sub = sub.head(MAXR).reset_index(drop=True)
+    view = sub.rename(columns={"kode": "Kode", "uraian": "Uraian Pekerjaan", "satuan": "Satuan", "kel_nama": "Kelompok"})[
+        ["Kode", "Uraian Pekerjaan", "Satuan", "Kelompok"]]
+    sig = hash((dsel, ksel, q.strip().lower()))
+    pilih = None
+    try:
+        ev = st.dataframe(view, hide_index=True, use_container_width=True, height=340, key=f"kt_tbl_{sig}",
+                          on_select="rerun", selection_mode="single-row")
+        baris_pilih = list(ev.selection.rows)
+        pilih = sub.iloc[baris_pilih[0]]["kode"] if baris_pilih else None
+        st.caption("👆 Klik satu baris pada tabel untuk membuka rincian koefisien.")
+    except TypeError:  # Streamlit lama tanpa seleksi baris
+        st.dataframe(view, hide_index=True, use_container_width=True, height=340)
+        pilih = st.selectbox("Buka rincian AHSP", sub["kode"].tolist(), key=f"kt_pil_{sig}",
+                             format_func=lambda k: f"{k} - {sub.set_index('kode').loc[k, 'uraian'][:90]}")
+    if not pilih:
+        return
+    ahsp = load_ahsp()["items"][pilih]
+    inf = info_kode(pilih)
+    st.markdown("---")
+    st.markdown(f"#### Detail Harga Satuan Pekerjaan · `{pilih}`")
+    wil_list = daftar_wilayah()
+    opsi = wil_list + ([WIL_CUSTOM] if p.harga_wilayah_df is not None else [])
+    d1, d2 = st.columns([2, 3])
+    wil = d1.selectbox("Harga dasar wilayah", opsi, index=opsi.index(p.wilayah) if p.wilayah in opsi else 0, key="kt_wil",
+                       help="Hanya untuk tampilan rincian ini; wilayah proyek diatur di Hitung RAB langkah 1.")
+    d2.caption(f"Divisi: **{inf['div']} - {inf['div_nama']}**  \nKelompok: **{inf['kel']} - {inf['kel_nama']}**")
+    pw = replace(p, wilayah=wil)
+    hs = hitung_rab([Baris(pilih, ahsp["uraian"], ahsp.get("satuan", ""), 1.0)], pw)
+    h = hs["ahsp"][pilih]
+    st.text_area("Pekerjaan", ahsp.get("uraian_penuh") or ahsp["uraian"], disabled=True, height=80, key=f"kt_ur_{pilih}")
+    st.markdown(f"**Satuan:** {_esc(h.satuan or '-')} · **Wilayah harga:** {_esc(wil)} · **Biaya umum & keuntungan:** {p.overhead_profit * 100:g}%")
+    st.markdown(_tabel_hsp_html(h, hs["komponen"], pw), unsafe_allow_html=True)
+    stat = Counter(v["res"].status for v in hs["komponen"].values())
+    if stat.get(STATUS_NOL, 0):
+        st.warning(f"{stat[STATUS_NOL]} komponen belum ada harga di {wil} (dihitung Rp 0). Isi manual di Hitung RAB langkah 3 setelah AHSP ini ditambahkan.")
+    elif sum(stat.get(k, 0) for k in STATUS_NEEDS_REVIEW):
+        st.info("Sebagian komponen berstatus perkiraan/acuan - harganya dari wilayah lain atau hasil pencocokan, perlu diperiksa.")
+    a1, a2, a3 = st.columns([1.2, 1.6, 2])
+    vol = a1.number_input(f"Volume ({h.satuan or 'satuan'})", min_value=0.0, value=float(ss.vol_katalog.get(pilih, 0.0)), step=1.0, key=f"kt_vol_{pilih}")
+    if a2.button("➕ Simpan ke daftar volume", type="primary", key=f"kt_add_{pilih}"):
+        if vol > 0:
+            ss.vol_katalog[pilih] = float(vol)
+            ss.cat_sig = None
+            st.success("Ditambahkan ke daftar volume (lihat di Hitung RAB langkah 1).")
+        else:
+            ss.vol_katalog.pop(pilih, None)
+            ss.cat_sig = None
+            st.info("Volume 0 - pekerjaan dikeluarkan dari daftar volume.")
+    rows = [{"Komponen": nm, "No": n, "Uraian": r["uraian"], "Satuan": r["satuan"], "Koefisien": r["koef"], "Harga Satuan": r["harga"],
+             "Jumlah Harga": r["jumlah"]} for kk, _, _, nm in KAT_AHSP for n, r in enumerate(h.rows[kk], start=1)]
+    a3.download_button("⬇️ Unduh rincian (CSV)", pd.DataFrame(rows).to_csv(index=False).encode("utf-8-sig"),
+                       f"AHSP_{pilih}.csv", "text/csv", key=f"kt_dl_{pilih}")
+
+
 def main():
     st.set_page_config(page_title=APP_TITLE, page_icon="🏗️", layout="wide")
     _ss_init()
@@ -2151,6 +2284,8 @@ def main():
         _page_dashboard(baris, hasil, p)
     elif halaman == P_HARGA:
         _page_harga(hasil, p)
+    elif halaman == P_KATALOG:
+        _page_katalog(p)
     elif halaman == P_RAB:
         _page_rab(baris, hasil, p)
     else:
@@ -2170,6 +2305,8 @@ Menu **Hitung RAB** berisi 6 langkah berurutan (pilihan Anda tersimpan saat berp
 6. **Hasil & Unduh** - lihat rekap RAB, lalu buat file Excel.
 
 Menu **Harga Satuan Dasar** menampilkan daftar harga upah, material, dan alat tiap wilayah.
+
+Menu **Katalog AHSP** menelusuri seluruh AHSP; klik satu baris untuk melihat koefisien tenaga/bahan/alat, harga satuan, dan total HSP, lalu simpan volumenya ke daftar RAB.
 
 ### Isi file Excel
 | Sheet | Isi |
