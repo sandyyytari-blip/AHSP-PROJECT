@@ -1476,68 +1476,68 @@ def _ss_init():
     ss.setdefault("cat_sig", None)
 
 
-def _sidebar() -> Params:
-    sb = st.sidebar
-    sb.markdown('<div class="sb-title">⚙️ Parameter Proyek</div>', unsafe_allow_html=True)
-    with sb.expander("📝 Identitas proyek"):
-        info = {
-            "program": st.text_input("Program", ""),
-            "kegiatan": st.text_input("Kegiatan", ""),
-            "pekerjaan": st.text_input("Pekerjaan", "Pembangunan Gedung"),
-            "lokasi": st.text_input("Lokasi", ""),
-            "tahun": st.text_input("Tahun Anggaran", str(dt.date.today().year)),
-        }
+CFG_DEFAULT = {
+    "program": "", "kegiatan": "", "pekerjaan": "Pembangunan Gedung", "lokasi": "", "tahun": str(dt.date.today().year),
+    "wil": "", "pakai_acuan": True, "acuan": "DKI Jakarta", "faktor": 1.0,
+    "ohp": 15.0, "ppn": 12.0, "digit": -3,
+    "bi_pasir": BERAT_ISI_DEFAULT["pasir"], "bi_kerikil": BERAT_ISI_DEFAULT["kerikil"], "bi_batu": BERAT_ISI_DEFAULT["batu"],
+    "durasi": 24, "tgl": dt.date.today(),
+    "ttd_kota": "", "ttd_tanggal": dt.date.today().strftime("%d %B %Y"), "ttd_jabatan": "", "ttd_nama": "",
+}
+WIL_CUSTOM_OPT = WIL_CUSTOM + " (unggah daftar harga sendiri)"
+
+
+def _cfg_init():
+    ss = st.session_state
+    if "cfg" not in ss:
+        ss.cfg = dict(CFG_DEFAULT)
+        ss.cfg["wil"] = daftar_wilayah()[0]
+    ss.setdefault("langkah", 1)
+
+
+def _w(kind: str, label: str, key: str, **kw):
+    """Widget yang nilainya disimpan di ss.cfg sehingga tetap ada walau langkah/halaman berpindah."""
+    ss = st.session_state
+    wk = "w_" + key
+    cur = ss.cfg[key]
+    if kind == "selectbox":
+        opts = list(kw["options"])
+        kw["options"] = opts
+        kw["index"] = opts.index(cur) if cur in opts else 0
+    else:
+        kw["value"] = cur
+
+    def _cb():
+        ss.cfg[key] = ss[wk]
+    val = getattr(st, kind)(label, key=wk, on_change=_cb, **kw)
+    ss.cfg[key] = val
+    return val
+
+
+def _params() -> Params:
+    ss = st.session_state
+    c = ss.cfg
     wil_list = daftar_wilayah()
-    pilihan = wil_list + [WIL_CUSTOM + " (unggah daftar harga sendiri)"]
-    harga_df, wilayah = None, wil_list[0]
-    pakai_acuan, acuan, faktor = True, "DKI Jakarta", 1.0
-    with sb.expander("📍 Wilayah & harga dasar", expanded=True):
-        idx = st.selectbox("Wilayah proyek (menentukan harga upah, bahan & alat)", range(len(pilihan)),
-                           format_func=lambda i: pilihan[i])
-        wilayah = wil_list[idx] if idx < len(wil_list) else WIL_CUSTOM
-        if wilayah == WIL_CUSTOM:
-            f = st.file_uploader("Daftar harga wilayah (xlsx/csv)", type=["xlsx", "csv"], key="up_harga",
-                                 help="Kolom wajib: kategori (Upah/Bahan/Alat), uraian, satuan, harga.")
-            if f is not None:
-                try:
-                    harga_df = baca_harga_unggahan(f.name, f.getvalue())
-                    st.success(f"{len(harga_df)} baris harga terbaca.")
-                except Exception as e:  # noqa: BLE001
-                    st.error(f"Gagal membaca harga: {e}")
-            if harga_df is None:
-                st.warning("Unggah daftar harga untuk memakai wilayah ini; sementara harga acuan dipakai.")
-                wilayah = wil_list[0]
-        pakai_acuan = st.checkbox("Pakai harga wilayah acuan bila harga tidak ditemukan", value=True,
-                                  help="Komponen yang tidak ada pada daftar harga wilayah diisi dari wilayah acuan dan ditandai 'periksa'.")
-        if pakai_acuan:
-            acuan = st.selectbox("Wilayah acuan", wil_list, index=wil_list.index("DKI Jakarta") if "DKI Jakarta" in wil_list else 0)
-            faktor = st.number_input("Faktor penyesuaian harga acuan", 0.3, 3.0, 1.0, 0.01,
-                                     help="Mis. 0,95 bila harga di wilayah proyek ±5% lebih murah dari wilayah acuan.")
-    with sb.expander("🧮 Parameter biaya"):
-        ohp = st.number_input("Biaya umum + keuntungan (%)", 0.0, 40.0, 15.0, 0.5, help="SE DJBK: 10% - 15% dari jumlah tenaga+bahan+alat.")
-        ppn = st.number_input("PPN (%)", 0.0, 25.0, 12.0, 0.5)
-        digit = st.selectbox("Pembulatan ke atas (ROUNDUP)", [0, -3, -5], index=1,
-                             format_func=lambda d: {0: "Rupiah penuh", -3: "Ribuan", -5: "Ratusan ribu"}[d])
-        st.markdown("**Berat isi bahan** (konversi m³ ↔ kg)")
-        bi = {"pasir": st.number_input("Pasir (kg/m³)", 800.0, 2200.0, BERAT_ISI_DEFAULT["pasir"], 10.0),
-              "kerikil": st.number_input("Kerikil/split (kg/m³)", 800.0, 2200.0, BERAT_ISI_DEFAULT["kerikil"], 10.0),
-              "batu": st.number_input("Batu kali/belah (kg/m³)", 800.0, 2800.0, BERAT_ISI_DEFAULT["batu"], 10.0)}
-        st.caption("Dipakai bila AHSP memakai kg sedangkan harga wilayah per m³ (atau sebaliknya). Asumsi - sesuaikan dengan hasil uji bahan.")
-    with sb.expander("🗓️ Jadwal pelaksanaan"):
-        durasi = int(st.number_input("Durasi pelaksanaan (minggu)", 2, 120, 24, 1))
-        tgl = st.date_input("Tanggal mulai", dt.date.today())
-    with sb.expander("✍️ Penandatangan (opsional)"):
-        ttd = {"kota": st.text_input("Kota", ""), "tanggal": st.text_input("Tanggal", dt.date.today().strftime("%d %B %Y")),
-               "jabatan": st.text_input("Jabatan", ""), "nama": st.text_input("Nama", "")}
-        if not ttd["kota"] and not ttd["jabatan"] and not ttd["nama"]:
-            ttd = {}
-    return Params(wilayah=wilayah if harga_df is None else WIL_CUSTOM, wilayah_acuan=acuan, pakai_acuan=pakai_acuan,
-                  faktor_acuan=float(faktor), overhead_profit=ohp / 100, ppn=ppn / 100, pembulatan_digit=int(digit),
-                  berat_isi=bi, harga_manual=dict(st.session_state.harga_manual), harga_wilayah_df=harga_df, info=info,
-                  durasi_minggu=durasi, tgl_mulai=tgl, jadwal=dict(st.session_state.jadwal), penandatangan=ttd)
+    custom = str(c["wil"]).startswith(WIL_CUSTOM)
+    harga_df = ss.get("harga_up_df") if custom else None
+    if custom:
+        wilayah = WIL_CUSTOM if harga_df is not None else wil_list[0]
+    else:
+        wilayah = c["wil"] if c["wil"] in wil_list else wil_list[0]
+    info = {k: c[k] for k in ("program", "kegiatan", "pekerjaan", "lokasi", "tahun")}
+    ttd = {"kota": c["ttd_kota"], "tanggal": c["ttd_tanggal"], "jabatan": c["ttd_jabatan"], "nama": c["ttd_nama"]}
+    if not ttd["kota"] and not ttd["jabatan"] and not ttd["nama"]:
+        ttd = {}
+    return Params(wilayah=wilayah, wilayah_acuan=c["acuan"], pakai_acuan=bool(c["pakai_acuan"]),
+                  faktor_acuan=float(c["faktor"]), overhead_profit=c["ohp"] / 100, ppn=c["ppn"] / 100,
+                  pembulatan_digit=int(c["digit"]),
+                  berat_isi={"pasir": c["bi_pasir"], "kerikil": c["bi_kerikil"], "batu": c["bi_batu"]},
+                  harga_manual=dict(ss.harga_manual), harga_wilayah_df=harga_df, info=info,
+                  durasi_minggu=int(c["durasi"]), tgl_mulai=c["tgl"], jadwal=dict(ss.jadwal), penandatangan=ttd)
 
 
-def _tab_upload():
+def _upload_volume():
+    """Langkah 1: unggah file volume (pencocokan AHSP otomatis). Peninjauan ada di langkah 2."""
     ss = st.session_state
     st.markdown("Unggah daftar pekerjaan beserta **volume**. Tidak perlu kode AHSP - aplikasi mencocokkan uraian otomatis.")
     c1, c2 = st.columns([1, 3])
@@ -1558,8 +1558,25 @@ def _tab_upload():
         return
     rows = ss.upload_rows
     n_rev = sum(1 for r in rows if r["sumber"] == "otomatis" and r["skor"] < THR_REVIEW and r["kode"] != "")
-    st.success(f"{len(rows)} baris terbaca. " + (f"**{n_rev} baris perlu ditinjau** (kecocokan rendah) - lihat di bawah." if n_rev else "Semua baris tercocokkan dengan yakin."))
+    st.success(f"{len(rows)} baris terbaca. " + (f"**{n_rev} baris perlu ditinjau** - lanjutkan ke langkah 2 (Sesuaikan AHSP)." if n_rev
+                                                else "Semua baris tercocokkan dengan yakin."))
+    if st.button("🗑️ Hapus data unggahan"):
+        ss.upload_rows, ss.upload_sig = [], None
+        st.rerun()
+
+
+def _tinjau_ahsp():
+    """Langkah 2: tabel pencocokan + pilih AHSP lain dari seluruh katalog."""
+    ss = st.session_state
+    rows = ss.upload_rows
     ahsp = load_ahsp()["items"]
+    if not rows:
+        st.info("Tidak ada file volume yang diunggah, jadi tidak ada pencocokan yang perlu disesuaikan. "
+                "Pekerjaan yang dipilih langsung dari katalog AHSP sudah memakai AHSP pilihan Anda. "
+                "Lanjut ke langkah berikutnya, atau kembali ke langkah 1 untuk menambah pekerjaan.")
+        return
+    n_rev = sum(1 for r in rows if r["sumber"] == "otomatis" and r["skor"] < THR_REVIEW and r["kode"] != "")
+    st.success(f"{len(rows)} baris terbaca. " + (f"**{n_rev} baris perlu ditinjau** (kecocokan rendah) - lihat di bawah." if n_rev else "Semua baris tercocokkan dengan yakin."))
     tbl = pd.DataFrame([{
         "No": i + 1, "Uraian (file Anda)": r["uraian"], "Satuan": r["satuan"], "Volume": r["volume"],
         "Dicocokkan ke AHSP": ("(harga manual)" if r["sumber"] == "manual" else
@@ -1595,9 +1612,6 @@ def _tab_upload():
                 r["skor"] = 100.0
             r["kode"] = "" if sel == "__abaikan__" else sel
         st.caption("Kolom pencarian memakai seluruh katalog AHSP. Pilihan yang sudah Anda tentukan tidak lagi ditandai 'perlu ditinjau'.")
-    if st.button("🗑️ Hapus data unggahan"):
-        ss.upload_rows, ss.upload_sig = [], None
-        st.rerun()
 
 
 def _tab_katalog():
@@ -1657,7 +1671,7 @@ def _kumpulkan_baris() -> list[Baris]:
 def _tab_ringkasan(baris: list[Baris]):
     st.subheader("📋 Daftar pekerjaan yang akan dihitung")
     if not baris:
-        st.info("Belum ada pekerjaan. Unggah file volume atau isi volume dari katalog AHSP.")
+        st.info("Belum ada pekerjaan. Unggah file volume atau isi volume dari katalog AHSP (di atas).")
         return
     ahsp = load_ahsp()["items"]
     df = pd.DataFrame([{"Kode": b.kode or "(manual)", "Uraian": b.uraian, "Satuan": b.satuan, "Volume": b.volume,
@@ -1673,7 +1687,7 @@ def _tab_jadwal(hasil: dict, p: Params):
     ss = st.session_state
     kel = [(k["kode"], k["nama"], k["subtotal"]) for d in hasil["divisi"] for k in d["kelompok"]]
     if not kel:
-        st.info("Isi volume pekerjaan terlebih dulu (tab 1).")
+        st.info("Isi volume pekerjaan terlebih dulu (langkah 1).")
         return
     auto = jadwal_otomatis([(k, v) for k, _, v in kel], p.durasi_minggu)
     total = sum(v for _, _, v in kel) or 1
@@ -1697,28 +1711,10 @@ def _tab_jadwal(hasil: dict, p: Params):
     st.bar_chart(ks[["Bobot mingguan (%)"]])
 
 
-def _tab_hasil(baris: list[Baris], hasil: dict, p: Params):
+def _status_harga(hasil: dict, p: Params):
+    """Langkah 3: status harga satuan dasar + isi/ubah harga manual + berat isi bahan."""
     ss = st.session_state
-    if not baris or hasil["n_item"] == 0:
-        st.info("Belum ada pekerjaan untuk dihitung.")
-        return
-    c = st.columns(4)
-    c[0].metric("Jumlah (sebelum PPN)", rp(hasil["jumlah"]))
-    c[1].metric(f"PPN {p.ppn * 100:g}%", rp(hasil["ppn"]))
-    c[2].metric("Total", rp(hasil["total"]))
-    c[3].metric("Dibulatkan", rp(hasil["dibulatkan"]))
-    st.caption(terbilang_rupiah(hasil["dibulatkan"]))
-    rekap = pd.DataFrame([{"Divisi": f"{d['kode']} - {d['nama']}", "Jumlah Harga (Rp)": d["subtotal"],
-                           "Bobot (%)": d["subtotal"] / hasil["jumlah"] * 100 if hasil["jumlah"] else 0} for d in hasil["divisi"]])
-    st.dataframe(rekap, hide_index=True, use_container_width=True,
-                 column_config={"Jumlah Harga (Rp)": st.column_config.NumberColumn(format="%.0f"),
-                                "Bobot (%)": st.column_config.NumberColumn(format="%.2f")})
-    if hasil["dilewati"]:
-        st.warning(f"{len(hasil['dilewati'])} baris tidak dihitung karena tidak ada AHSP terpilih / harga manual.")
-
-    # ---- status harga ----
     stat = Counter(v["res"].status for v in hasil["komponen"].values())
-    st.subheader("💲 Status harga satuan dasar")
     cols = st.columns(5)
     for col, key in zip(cols, (STATUS_OK, STATUS_PERIKSA, STATUS_ACUAN, STATUS_MANUAL, STATUS_NOL)):
         col.metric(key, stat.get(key, 0))
@@ -1728,7 +1724,7 @@ def _tab_hasil(baris: list[Baris], hasil: dict, p: Params):
     perlu = [(k, v) for k, v in hasil["komponen"].items()
              if v["res"].status in STATUS_NEEDS_REVIEW or v["res"].status == STATUS_MANUAL]
     if perlu:
-        with st.expander(f"✏️ Periksa / isi harga manual ({len(perlu)} komponen)", expanded=bool(stat.get(STATUS_NOL, 0))):
+        with st.expander(f"✏️ Periksa / isi harga manual ({len(perlu)} komponen)", expanded=True):
             perlu.sort(key=lambda kv: (kv[1]["res"].status != STATUS_NOL, kv[0][0], kv[1]["uraian"]))
             st.caption("Ubah kolom **Harga baru** (per satuan AHSP, mis. per kg / m³ / OH / jam), lalu tekan **Terapkan harga**. "
                        "Kosongkan kolom untuk membatalkan harga manual.")
@@ -1752,11 +1748,41 @@ def _tab_hasil(baris: list[Baris], hasil: dict, p: Params):
                     else:
                         ss.harga_manual.pop(k, None)
                 st.rerun()
+    else:
+        st.success("Semua komponen harga sudah cocok dengan daftar harga wilayah.")
     if ss.harga_manual and st.button("Hapus semua harga manual"):
         ss.harga_manual = {}
         st.rerun()
+    with st.expander("⚖️ Berat isi bahan (konversi m³ ↔ kg)"):
+        _w("number_input", "Pasir (kg/m³)", "bi_pasir", min_value=800.0, max_value=2200.0, step=10.0)
+        _w("number_input", "Kerikil/split (kg/m³)", "bi_kerikil", min_value=800.0, max_value=2200.0, step=10.0)
+        _w("number_input", "Batu kali/belah (kg/m³)", "bi_batu", min_value=800.0, max_value=2800.0, step=10.0)
+        st.caption("Dipakai bila AHSP memakai kg sedangkan harga wilayah per m³ (atau sebaliknya). Asumsi - sesuaikan dengan hasil uji bahan.")
 
-    # ---- ekspor ----
+
+def _hasil_ringkas(hasil: dict, p: Params):
+    c = st.columns(4)
+    c[0].metric("Jumlah (sebelum PPN)", rp(hasil["jumlah"]))
+    c[1].metric(f"PPN {p.ppn * 100:g}%", rp(hasil["ppn"]))
+    c[2].metric("Total", rp(hasil["total"]))
+    c[3].metric("Dibulatkan", rp(hasil["dibulatkan"]))
+    st.caption(terbilang_rupiah(hasil["dibulatkan"]))
+    rekap = pd.DataFrame([{"Divisi": f"{d['kode']} - {d['nama']}", "Jumlah Harga (Rp)": d["subtotal"],
+                           "Bobot (%)": d["subtotal"] / hasil["jumlah"] * 100 if hasil["jumlah"] else 0} for d in hasil["divisi"]])
+    st.dataframe(rekap, hide_index=True, use_container_width=True,
+                 column_config={"Jumlah Harga (Rp)": st.column_config.NumberColumn(format="%.0f"),
+                                "Bobot (%)": st.column_config.NumberColumn(format="%.2f")})
+    if hasil["dilewati"]:
+        st.warning(f"{len(hasil['dilewati'])} baris tidak dihitung karena tidak ada AHSP terpilih / harga manual.")
+    stat = Counter(v["res"].status for v in hasil["komponen"].values())
+    if stat.get(STATUS_NOL, 0):
+        st.error(f"{stat[STATUS_NOL]} komponen masih belum ada harga (dihitung Rp 0). Kembali ke langkah 3 untuk mengisinya.")
+    elif sum(stat.get(k, 0) for k in STATUS_NEEDS_REVIEW):
+        st.warning(f"{sum(stat.get(k, 0) for k in STATUS_NEEDS_REVIEW)} komponen masih berstatus perkiraan/acuan - periksa di langkah 3.")
+
+
+def _hasil_unduh(baris: list[Baris], hasil: dict, p: Params):
+    ss = st.session_state
     st.subheader("📥 Unduh Excel")
     sig = repr((tuple((b.kode, b.uraian, b.satuan, b.volume, b.harga_manual) for b in baris), p.wilayah, p.wilayah_acuan,
                 p.pakai_acuan, p.faktor_acuan, p.overhead_profit, p.ppn, p.pembulatan_digit, sorted(p.berat_isi.items()),
@@ -1835,12 +1861,14 @@ button[kind="secondary"] { border-radius:10px; border:1px solid #D5DDEB; font-we
 [data-testid="stExpander"] { border-radius:12px; }
 .panel { background:#fff; border:1px solid #E9EDF5; border-radius:16px; padding:6px 22px 18px; box-shadow:0 2px 8px rgba(16,24,40,.04); }
 @media (max-width: 900px) { .cards, .steps { grid-template-columns: repeat(2,1fr); } .hero { padding:24px; } }
+[data-testid="stVerticalBlockBorderWrapper"]:has(> div > [data-testid="stVerticalBlock"] h5) { background:#fff; border-radius:14px; }
+.stButton > button { white-space: nowrap; }
 </style>
 """
 
-P_DASH, P_VOL, P_JADWAL, P_HASIL, P_PANDUAN = "🏠  Dashboard", "📋  Volume Pekerjaan", "🗓️  Jadwal & Kurva S", "📥  Hitung & Unduh", "📖  Panduan"
+P_DASH, P_RAB, P_PANDUAN = "🏠  Dashboard", "🧮  Hitung RAB", "📖  Panduan"
 P_HARGA = "💲  Harga Satuan Dasar"
-PAGES = [P_DASH, P_HARGA, P_VOL, P_JADWAL, P_HASIL, P_PANDUAN]
+PAGES = [P_DASH, P_HARGA, P_RAB, P_PANDUAN]
 
 
 def _esc(x) -> str:
@@ -1859,8 +1887,19 @@ def _nav() -> str:
     return sb.radio("Menu", PAGES, key="halaman", label_visibility="collapsed")
 
 
+def _sidebar_ringkas(p: Params, baris: list[Baris]):
+    c = st.session_state.cfg
+    st.sidebar.markdown('<div class="sb-title">Proyek aktif</div>', unsafe_allow_html=True)
+    st.sidebar.caption(f"**{c['pekerjaan'] or 'Proyek Baru'}**  \n📍 {p.wilayah}  \n📋 {len(baris)} pekerjaan · 🗓️ {p.durasi_minggu} minggu")
+
+
 def _ke_halaman(h: str):
     st.session_state["halaman"] = h
+
+
+def _mulai_rab():
+    st.session_state["halaman"] = P_RAB
+    st.session_state["langkah"] = 1
 
 
 def _page_dashboard(baris: list[Baris], hasil: dict, p: Params):
@@ -1869,12 +1908,12 @@ def _page_dashboard(baris: list[Baris], hasil: dict, p: Params):
     <div class="hero"><div>
       <span class="chip">AHSP Bidang Cipta Karya · SE DJBK No. 47 Tahun 2026</span>
       <h1>Susun RAB Konstruksi<br>dari volume ke Excel, otomatis.</h1>
-      <p>Pilih wilayah proyek, isi volume pekerjaan tanpa mengetik kode, lalu unduh AHSP, DHSP, BoQ, Rekap RAB dan Kurva S dalam satu file Excel berumus hidup.</p>
+      <p>Pilih wilayah proyek, isi volume pekerjaan tanpa mengetik kode, ikuti langkah-langkahnya, lalu unduh AHSP, DHSP, BoQ, Rekap RAB dan Kurva S dalam satu file Excel berumus hidup.</p>
     </div>
     <div class="side"><div class="k">Proyek aktif</div><div class="v">{_esc(nama)}</div>
       <div class="k" style="margin-top:12px">Wilayah harga</div><div class="v">{_esc(p.wilayah)}</div></div></div>
     """, unsafe_allow_html=True)
-    st.button("➕  Mulai isi volume pekerjaan", type="primary", on_click=_ke_halaman, args=(P_VOL,))
+    st.button("➕  Mulai hitung RAB", type="primary", on_click=_mulai_rab)
     n_item = hasil.get("n_item", 0)
     total = rp(hasil["dibulatkan"]) if n_item else "Rp 0"
     stat = Counter(v["res"].status for v in hasil.get("komponen", {}).values())
@@ -1888,10 +1927,10 @@ def _page_dashboard(baris: list[Baris], hasil: dict, p: Params):
       <div class="card" style="--c:{'#EF4444' if stat.get(STATUS_NOL,0) else '#7C3AED'};--bg:#F1EAFE"><div class="ic">⚠️</div><div class="n">{periksa}<small>komponen</small></div><div class="l">Harga perlu diperiksa ({stat.get(STATUS_NOL,0)} belum ada harga)</div></div>
     </div>
     <div class="steps">
-      <div class="step"><div class="no">1</div><b>Pilih wilayah</b><span>Atur di panel kiri; lihat daftar harganya di menu Harga Satuan Dasar.</span></div>
-      <div class="step"><div class="no">2</div><b>Isi volume</b><span>Unggah Excel/CSV atau pilih dari katalog 2.797 AHSP.</span></div>
-      <div class="step"><div class="no">3</div><b>Atur jadwal</b><span>Usulan otomatis per kelompok pekerjaan untuk Kurva S.</span></div>
-      <div class="step"><div class="no">4</div><b>Unduh Excel</b><span>Periksa status harga, lalu buat file RAB lengkap.</span></div>
+      <div class="step"><div class="no">1</div><b>Wilayah &amp; volume</b><span>Pilih wilayah, lalu unggah Excel/CSV atau pilih dari katalog 2.797 AHSP.</span></div>
+      <div class="step"><div class="no">2</div><b>AHSP &amp; harga</b><span>Sesuaikan AHSP yang kurang cocok, lalu periksa/isi harga satuan dasar.</span></div>
+      <div class="step"><div class="no">3</div><b>Durasi &amp; biaya</b><span>Atur jadwal Kurva S, overhead, PPN, identitas proyek &amp; penandatangan.</span></div>
+      <div class="step"><div class="no">4</div><b>Unduh Excel</b><span>Lihat rekap RAB, lalu buat file Excel lengkap.</span></div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -1942,44 +1981,195 @@ def _page_harga(hasil: dict, p: Params):
                                f"harga_{judul}_{re.sub('[^A-Za-z0-9]+', '_', wil)}.csv", "text/csv", key=f"dl_harga_{kat}")
 
 
+
+
+LANGKAH = [("Volume", "📋"), ("Sesuaikan AHSP", "🔎"), ("Atur Harga", "💲"), ("Durasi", "🗓️"), ("Biaya & Proyek", "🧮"), ("Hasil & Unduh", "📥")]
+
+
+def _set_langkah(n: int):
+    st.session_state.langkah = n
+
+
+def _stepper():
+    cur = st.session_state.langkah
+    cols = st.columns(len(LANGKAH))
+    for i, (col, (nama, ic)) in enumerate(zip(cols, LANGKAH), start=1):
+        col.button(f"{'✓' if i < cur else ic} {i}. {nama}", key=f"step_{i}", use_container_width=True,
+                   type="primary" if i == cur else "secondary", on_click=_set_langkah, args=(i,))
+
+
+def _footer(n: int, bisa_lanjut: bool = True, alasan: str = ""):
+    st.divider()
+    c1, c2, c3 = st.columns([1.2, 4, 2.2])
+    if n > 1:
+        c1.button(f"← {LANGKAH[n - 2][0]}", key=f"back_{n}", on_click=_set_langkah, args=(n - 1,), use_container_width=True)
+    if not bisa_lanjut and alasan:
+        c2.caption(alasan)
+    if n < len(LANGKAH):
+        c3.button(f"Lanjut: {LANGKAH[n][0]} →", key=f"next_{n}", type="primary", disabled=not bisa_lanjut,
+                  on_click=_set_langkah, args=(n + 1,), use_container_width=True)
+
+
+def _wilayah_panel():
+    ss = st.session_state
+    wil_list = daftar_wilayah()
+    with st.container(border=True):
+        st.markdown("##### 📍 Wilayah & harga dasar")
+        c1, c2 = st.columns([3, 2])
+        with c1:
+            wsel = _w("selectbox", "Wilayah proyek (menentukan harga upah, bahan & alat)", "wil", options=wil_list + [WIL_CUSTOM_OPT])
+        with c2:
+            st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
+            st.caption("Lihat isi daftar harga di menu **Harga Satuan Dasar**.")
+        if str(wsel).startswith(WIL_CUSTOM):
+            f = st.file_uploader("Daftar harga wilayah (xlsx/csv)", type=["xlsx", "csv"], key="up_harga",
+                                 help="Kolom wajib: kategori (Upah/Bahan/Alat), uraian, satuan, harga.")
+            if f is not None and ss.get("harga_up_sig") != (f.name, f.size):
+                try:
+                    ss.harga_up_df = baca_harga_unggahan(f.name, f.getvalue())
+                    ss.harga_up_sig = (f.name, f.size)
+                except Exception as e:  # noqa: BLE001
+                    st.error(f"Gagal membaca harga: {e}")
+            if ss.get("harga_up_df") is not None:
+                st.success(f"{len(ss.harga_up_df)} baris harga terbaca.")
+            else:
+                st.warning("Unggah daftar harga untuk memakai wilayah ini; sementara harga acuan dipakai.")
+        a1, a2, a3 = st.columns([2.2, 2, 1.4])
+        with a1:
+            st.markdown("<div style='height:6px'></div>", unsafe_allow_html=True)
+            pakai = _w("checkbox", "Pakai harga wilayah acuan bila harga tidak ditemukan", "pakai_acuan",
+                       help="Komponen yang tidak ada pada daftar harga wilayah diisi dari wilayah acuan dan ditandai 'periksa'.")
+        if pakai:
+            with a2:
+                _w("selectbox", "Wilayah acuan", "acuan", options=wil_list)
+            with a3:
+                _w("number_input", "Faktor harga acuan", "faktor", min_value=0.3, max_value=3.0, step=0.01,
+                   help="Mis. 0,95 bila harga di wilayah proyek ±5% lebih murah dari wilayah acuan.")
+
+
+def _langkah1(baris: list[Baris]):
+    _wilayah_panel()
+    st.markdown("##### 📋 Volume pekerjaan")
+    s1, s2 = st.tabs(["📤 Unggah Volume (Excel/CSV)", "🔎 Pilih dari Katalog AHSP"])
+    with s1:
+        _upload_volume()
+    with s2:
+        _tab_katalog()
+    _tab_ringkasan(_kumpulkan_baris())
+
+
+def _langkah2():
+    st.caption("Periksa pekerjaan yang kecocokannya rendah dan ganti AHSP-nya dengan mencari di seluruh katalog.")
+    _tinjau_ahsp()
+
+
+def _langkah3(hasil: dict, p: Params):
+    st.caption(f"Harga satuan dasar dari wilayah **{p.wilayah}**. Periksa komponen berstatus perkiraan/acuan, atau isi harga manual.")
+    _status_harga(hasil, p)
+
+
+def _langkah4(hasil: dict, p: Params):
+    with st.container(border=True):
+        c1, c2 = st.columns(2)
+        with c1:
+            _w("number_input", "Durasi pelaksanaan (minggu)", "durasi", min_value=2, max_value=120, step=1)
+        with c2:
+            _w("date_input", "Tanggal mulai", "tgl")
+    _tab_jadwal(hasil, p)
+
+
+def _langkah5():
+    c1, c2 = st.columns(2)
+    with c1:
+        with st.container(border=True):
+            st.markdown("##### 🧮 Biaya umum, keuntungan & PPN")
+            _w("number_input", "Biaya umum + keuntungan (%)", "ohp", min_value=0.0, max_value=40.0, step=0.5,
+               help="SE DJBK: 10% - 15% dari jumlah tenaga+bahan+alat.")
+            _w("number_input", "PPN (%)", "ppn", min_value=0.0, max_value=25.0, step=0.5)
+            _w("selectbox", "Pembulatan ke atas (ROUNDUP)", "digit", options=[0, -3, -5],
+               format_func=lambda d: {0: "Rupiah penuh", -3: "Ribuan", -5: "Ratusan ribu"}[d])
+        with st.container(border=True):
+            st.markdown("##### ✍️ Penandatangan (opsional)")
+            _w("text_input", "Kota", "ttd_kota")
+            _w("text_input", "Tanggal", "ttd_tanggal")
+            _w("text_input", "Jabatan", "ttd_jabatan")
+            _w("text_input", "Nama", "ttd_nama")
+    with c2:
+        with st.container(border=True):
+            st.markdown("##### 📝 Identitas proyek")
+            _w("text_input", "Program", "program")
+            _w("text_input", "Kegiatan", "kegiatan")
+            _w("text_input", "Pekerjaan", "pekerjaan")
+            _w("text_input", "Lokasi", "lokasi")
+            _w("text_input", "Tahun Anggaran", "tahun")
+
+
+def _langkah6(baris: list[Baris], hasil: dict, p: Params):
+    _hasil_ringkas(hasil, p)
+    _hasil_unduh(baris, hasil, p)
+
+
+def _page_rab(baris: list[Baris], hasil: dict, p: Params):
+    _judul("Hitung RAB", "Ikuti langkah berurutan - dari volume pekerjaan sampai unduh Excel. Pilihan Anda tersimpan saat berpindah langkah.")
+    _stepper()
+    n = st.session_state.langkah
+    ada = bool(baris) and hasil.get("n_item", 0) > 0
+    if n == 1:
+        _langkah1(baris)
+        _footer(n, bool(baris), "Isi minimal satu pekerjaan (unggah file atau pilih dari katalog) untuk melanjutkan.")
+    elif n == 2:
+        _langkah2()
+        _footer(n)
+    elif n in (3, 4, 6) and not ada:
+        st.info("Belum ada pekerjaan untuk dihitung. Kembali ke langkah 1 untuk mengisi volume.")
+        _footer(n)
+    elif n == 3:
+        _langkah3(hasil, p)
+        _footer(n)
+    elif n == 4:
+        _langkah4(hasil, p)
+        _footer(n)
+    elif n == 5:
+        _langkah5()
+        _footer(n)
+    else:
+        _langkah6(baris, hasil, p)
+        _footer(n)
+
+
 def main():
     st.set_page_config(page_title=APP_TITLE, page_icon="🏗️", layout="wide")
     _ss_init()
+    _cfg_init()
     st.markdown(CSS, unsafe_allow_html=True)
     halaman = _nav()
-    p = _sidebar()
+    p = _params()
     baris = _kumpulkan_baris()
     hasil = hitung_rab(baris, p) if baris else {"divisi": [], "n_item": 0, "komponen": {}, "dilewati": []}
+    _sidebar_ringkas(p, baris)
     if halaman == P_DASH:
         _page_dashboard(baris, hasil, p)
     elif halaman == P_HARGA:
         _page_harga(hasil, p)
-    elif halaman == P_VOL:
-        _judul("Volume Pekerjaan", "Unggah daftar volume atau pilih pekerjaan dari katalog AHSP - tanpa mengetik kode.")
-        s1, s2 = st.tabs(["📤 Unggah Volume (Excel/CSV)", "🔎 Pilih dari Katalog AHSP"])
-        with s1:
-            _tab_upload()
-        with s2:
-            _tab_katalog()
-        _tab_ringkasan(_kumpulkan_baris())
-    elif halaman == P_JADWAL:
-        _judul("Jadwal & Kurva S", "Atur minggu mulai dan selesai tiap kelompok pekerjaan; Kurva S dihitung otomatis.")
-        _tab_jadwal(hasil, p)
-    elif halaman == P_HASIL:
-        _judul("Hitung & Unduh", "Rekap biaya, pemeriksaan harga satuan dasar, dan unduh file Excel RAB.")
-        _tab_hasil(baris, hasil, p)
+    elif halaman == P_RAB:
+        _page_rab(baris, hasil, p)
     else:
         _judul("Panduan", "Cara memakai aplikasi dan isi file Excel yang dihasilkan.")
         st.markdown(PANDUAN)
 
 
+
 PANDUAN = """
 ### Cara pakai
-1. **Pilih wilayah proyek** di panel kiri - menentukan harga satuan dasar upah, bahan, dan alat.
-2. **Isi volume** (tab 1): unggah Excel/CSV (uraian, satuan, volume) *atau* cari pekerjaan di katalog AHSP lalu isi volumenya.
-   Aplikasi mencocokkan uraian ke AHSP SE DJBK 47/2026 secara otomatis; baris yang ragu-ragu ditandai untuk ditinjau.
-3. **Atur jadwal** (tab 2) - usulan otomatis per kelompok pekerjaan, dapat diubah.
-4. **Hitung & unduh** (tab 3): periksa status harga, lalu buat file Excel.
+Menu **Hitung RAB** berisi 6 langkah berurutan (pilihan Anda tersimpan saat berpindah langkah):
+1. **Volume** - pilih wilayah proyek (menentukan harga upah, bahan, alat) lalu unggah Excel/CSV *atau* cari pekerjaan di katalog AHSP dan isi volumenya.
+2. **Sesuaikan AHSP** - baris yang kecocokannya rendah ditandai; cari dan pilih AHSP lain dari seluruh katalog bila perlu.
+3. **Atur Harga** - periksa status harga satuan dasar, isi harga manual untuk yang belum ada, atur berat isi bahan.
+4. **Durasi** - tentukan durasi/tanggal mulai dan ubah jadwal per kelompok pekerjaan untuk Kurva S.
+5. **Biaya & Proyek** - biaya umum + keuntungan, PPN, pembulatan, identitas proyek, dan penandatangan.
+6. **Hasil & Unduh** - lihat rekap RAB, lalu buat file Excel.
+
+Menu **Harga Satuan Dasar** menampilkan daftar harga upah, material, dan alat tiap wilayah.
 
 ### Isi file Excel
 | Sheet | Isi |
@@ -1999,3 +2189,5 @@ PANDUAN = """
 
 if st is not None and __name__ == "__main__":
     main()
+
+
